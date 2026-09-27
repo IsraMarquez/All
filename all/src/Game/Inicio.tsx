@@ -201,7 +201,7 @@ export const Inicio = () =>  {
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
                 <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContex</button></td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>EntEscrituras</td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}>EntEscrituras(HomeDob)</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Info</td>
                 </tr>
