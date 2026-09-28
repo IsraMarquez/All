@@ -1,5 +1,7 @@
 //import { BasicTypes } from './typescript/BasicTypes'
 //import { ObjectLiterals } from './typescript/ObjectLiterals'
+// import { BasicFunctions } from './typescript/BasicFunctions';
+
 import { Inicio } from './Game/Inicio'
 import { RVDJParaMi} from './Game/00ARVDJ/RVDJParaMi';
 import { RVDJFamEH} from './Game/00ARVDJ/RVDJFamEH';
@@ -53,9 +55,9 @@ function App() {
         </Routes>
       </Router>
 
-        {/* <Inicio /> */}
         {/*<BasicTypes />*/}
         {/*<ObjectLiterals />*/}
+        {/* <BasicFunctions/> */}
       </>
   )
 }
