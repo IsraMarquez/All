@@ -18,10 +18,15 @@ import VRTec from '../assets/videos/RTec.mp4';
 import VRSal from '../assets/videos/RSal.mp4';
 import VRDep from '../assets/videos/RDep.mp4';
 
+
+import { useNavigate } from 'react-router-dom';
 import { useRef, type SetStateAction} from 'react';
 import { useState } from 'react';
 
 export const Inicio = () =>  {
+      // 1. Inicializas la función de navegación
+  const navigate = useNavigate();
+
     // 1. Creamos la referencia para el video
   const videoRef = useRef(null);
     const [videoActual, setVideoActual] = useState(null);
@@ -42,7 +47,8 @@ export const Inicio = () =>  {
   };
 
   return (
-    <>
+    <>      
+    {/* video*/}
     {videoActual !== null && (
      <div style={{ 
         position: 'fixed',        // Fija el contenedor sobre toda la pantalla
@@ -141,7 +147,7 @@ export const Inicio = () =>  {
 
         {/* Secciones*/}
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          ARVDJ
+          ARVDJ (Felicidad) 60%
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -157,14 +163,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContex</button></td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>EntEscrituras</td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Info</td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RVDJParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContex</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RVDJFamEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">EntEscrituras</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RVDJFamExtEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">My Info</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RVDJEllos')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Ellos-Info</button></td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RVDJParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ayudar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Practicar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Lugares</td>
@@ -184,7 +190,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
 
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          FAMEH
+          FAMEH (MC-V-AmistadAmorVerd-Felicidad)
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -200,15 +206,15 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContex</button></td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>EntEscrituras(HomeDob)</td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Info</td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/FAMEHParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContex</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/FAMEHFamEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">EntEscrituras(HomeDob)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/FAMEHFamExtEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">My Info</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/FAMEHEllos')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Ellos-Info</button></td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>Noches Hogar (Actividades)</td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/FAMEHParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}>Noches Hogar (Actividades) MyTiempo Posible (Niños)</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Practicar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Lugares</td>
                 </tr>
@@ -225,7 +231,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
 
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RInvAde (Vertical)
+          RInvAde (Vertical) Autosuf-Libertad-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -241,14 +247,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Master)</button></td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
-                <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvAdeParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Master)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvAdeFamEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">PlanInnovLog</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvAdeFamExtEH')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">My Info</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvAdeParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -267,7 +273,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
 
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          REnt (Vertical)
+          REnt (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -283,14 +289,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Espe)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/REntParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Espe)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/REntParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -308,7 +314,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
         
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RMnd (Vertical)
+          RMnd (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -324,14 +330,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Espe)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RMunParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Espe)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RMunParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -349,7 +355,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
         
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RInv (Vertical)
+          RInv (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -365,14 +371,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Ing/Lic)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Ing/Lic)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RInvParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -390,7 +396,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
         
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RTec (Vertical)
+          RTec (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -406,14 +412,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Ing/Lic)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RTecParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Ing/Lic)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RTecParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -431,7 +437,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
         
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RSal (Vertical)
+          RSal (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -447,14 +453,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Cur)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RSalParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Cur)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RSalParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
@@ -472,7 +478,7 @@ export const Inicio = () =>  {
         <hr style={{ gridColumn: '1 / -1', width: '100%', border: '0', borderTop: '1px solid #ccc', margin: '10px 0' }} />
         
         <h2 style={{  backgroundImage: 'url(${RVDJ})', textAlign: 'left', fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>
-          RHab (Vertical)
+          RHab (Vertical) Bueno-Felicidad
 
             {/* Subtabla de 4 columnas x 4 renglones */}
             <table style={{tableLayout: 'fixed', textAlign: 'left', width: '100%', borderCollapse: 'collapse' }}>
@@ -488,14 +494,14 @@ export const Inicio = () =>  {
                 </tr>
                 {/* Renglón 2 (puedes alternar colores o fondos) */}
                 <tr >
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Cur)</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RDepParaMi')} type = "button" style={{ backgroundColor: 'yellow', color: 'black' }} className="btn btn-secondary btn-sm">Div-PreEntContexVertical-IA (Cur)</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>PlanInnovLog</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>My Info</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Servicios</td>
                 </tr>
                 {/* Renglón 3 */}
                 <tr>
-                <td style={{padding: '8px', color: '#b1b1b1'}}><button type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
+                <td style={{padding: '8px', color: '#b1b1b1'}}><button onClick={() => navigate('/RDepParaMi')} type = "button" style={{ backgroundColor: 'green', color: 'white' }} className="btn btn-secondary btn-sm">Sim-ProPruebaRapAde</button></td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Demo</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Probar</td>
                 <td style={{padding: '8px', color: '#b1b1b1'}}>Ellos-Reparaciones</td>
