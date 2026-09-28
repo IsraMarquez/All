@@ -20,7 +20,7 @@ export const RSalParaMi = () =>  {
         <br/>
         <br/>ControlPeso (Cardio60% - (Limpiar60% - Ordenar60%)
         <br/>Gym - Preparar - 
-        <br/>Kalorias Menos posible) 
+        <br/>Kalorias Menos posible (Frutas y Verduras)) 
         <br/>
         <button onClick={() => navigate(-1)} type = "button" style={{ backgroundColor: 'black', color: 'white' }} className="btn btn-secondary btn-sm">Regresar</button>
     </div>

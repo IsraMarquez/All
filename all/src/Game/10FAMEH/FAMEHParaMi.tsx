@@ -6,7 +6,7 @@ export const FAMEHParaMi = () =>  {
   const navigate = useNavigate();
 
   return (
-    <div>MC-Virtud-AmistadAmor-Felicidad
+    <div>MC(Virtual/Fisico)-Virtud-AmistadAmor-Felicidad
         <br/>
         <button onClick={() => navigate(-1)} type = "button" style={{ backgroundColor: 'black', color: 'white' }} className="btn btn-secondary btn-sm">Regresar</button>
     </div>
