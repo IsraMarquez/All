@@ -1,0 +1,5 @@
+npx create-expo-app@latest mi-app-multiplataforma 
+cd mi-app-multiplataforma
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+C:\Users\UCQ\AppData\Local\Android\Sdk
