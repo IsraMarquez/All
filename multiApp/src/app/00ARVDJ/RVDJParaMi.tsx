@@ -1,21 +1,13 @@
-//import { useNavigate } from 'react-router-dom';
+import { Link } from 'expo-router';
+import { Text, View } from 'react-native';
 
 export const RVDJParaMi = () => {
-  // 1. Inicializas la función de navegación
-  const router = useRouter();
-
   return (
-    <div>
-      Felicidad (Vida Eterna)
-      <br />
-      <button
-        onClick={() => router.push(-1)}
-        type="button"
-        style={{ backgroundColor: "black", color: "white" }}
-        className="btn btn-secondary btn-sm"
-      >
+    <View>
+      <Text style={{ color: 'white' }}>Felicidad (Vida Eterna)</Text>
+      <Link style={{ color: 'white' }} href="/">
         Regresar
-      </button>
-    </div>
+      </Link>
+    </View>
   );
 };

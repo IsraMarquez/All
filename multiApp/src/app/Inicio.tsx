@@ -1,31 +1,30 @@
-import RVDJ from "@/assets/sprites/Abuelo.png";
-import RDep from "@/assets/sprites/Army.jpg";
-import RSal from "@/assets/sprites/Comida.jpeg";
-import RInv from "@/assets/sprites/Educacion.jpg";
-import REnt from "@/assets/sprites/Feliz.jpeg";
-import FAMEH from "@/assets/sprites/Matrimonio.jpeg";
-import RInvAde from "@/assets/sprites/RInvAde.jpg";
-import RTec from "@/assets/sprites/Tec.jpg";
-import RMun from "@/assets/sprites/Viajar.jpeg";
+import RVDJ from '@/assets/sprites/Abuelo.png';
+import RDep from '@/assets/sprites/Army.jpg';
+import RSal from '@/assets/sprites/Comida.jpeg';
+import RInv from '@/assets/sprites/Educacion.jpg';
+import REnt from '@/assets/sprites/Feliz.jpeg';
+import FAMEH from '@/assets/sprites/Matrimonio.jpeg';
+import RInvAde from '@/assets/sprites/RInvAde.jpg';
+import RTec from '@/assets/sprites/Tec.jpg';
+import RMun from '@/assets/sprites/Viajar.jpeg';
 
-import VFAMEH from "@/assets/videos/FamEh.mp4";
-import VRVDJ from "@/assets/videos/Misional.mp4";
-import VRDep from "@/assets/videos/RDep.mp4";
-import VREnt from "@/assets/videos/REntre.mp4";
-import VRInv from "@/assets/videos/RInv.mp4";
-import VRIntAde from "@/assets/videos/RInvAde.mp4";
-import VRMun from "@/assets/videos/RMun.mp4";
-import VRSal from "@/assets/videos/RSal.mp4";
-import VRTec from "@/assets/videos/RTec.mp4";
+import VFAMEH from '@/assets/videos/FamEh.mp4';
+import VRVDJ from '@/assets/videos/Misional.mp4';
+import VRDep from '@/assets/videos/RDep.mp4';
+import VREnt from '@/assets/videos/REntre.mp4';
+import VRInv from '@/assets/videos/RInv.mp4';
+import VRIntAde from '@/assets/videos/RInvAde.mp4';
+import VRMun from '@/assets/videos/RMun.mp4';
+import VRSal from '@/assets/videos/RSal.mp4';
+import VRTec from '@/assets/videos/RTec.mp4';
 
-import { useRouter } from "expo-router";
-import { View } from "react-native";
+import { View } from 'react-native';
 //import { userouter.push ' from 'react'router-dom';
-import { useRef, useState, type SetStateAction } from "react";
+import { useRef, useState, type SetStateAction } from 'react';
 
 export const Inicio = () => {
   // 1. Inicializas la función de navegación
-  const router = useRouter();
+  //const router = useRouter();
   //const router.push ' userouter.push'';
   // 1. Creamos la referencia para el video
   const videoRef = useRef(null);
@@ -41,8 +40,8 @@ export const Inicio = () => {
       videoRef.current.play();
       setTimeout(() => {
         videoRef.current.scrollIntoView({
-          behavior: "smooth", // 👈 Hace que el movimiento sea animado y suave, no un brinco brusco
-          block: "center",
+          behavior: 'smooth', // 👈 Hace que el movimiento sea animado y suave, no un brinco brusco
+          block: 'center',
         });
       }, 50);
     }
@@ -54,16 +53,16 @@ export const Inicio = () => {
       {videoActual !== null && (
         <View
           style={{
-            position: "fixed", // Fija el contenedor sobre toda la pantalla
+            position: 'fixed', // Fija el contenedor sobre toda la pantalla
             top: 0,
             left: 0,
-            width: "100vw", // 100% del ancho de la ventana
-            height: "100vh", // 100% del alto de la ventana
-            backgroundColor: "rgba(0, 0, 0, 0.95)", // Fondo oscuro semitransparente muy elegante
+            width: '100vw', // 100% del ancho de la ventana
+            height: '100vh', // 100% del alto de la ventana
+            backgroundColor: 'rgba(0, 0, 0, 0.95)', // Fondo oscuro semitransparente muy elegante
             zIndex: 9999, // Se asegura de estar por encima de ABSOLUTAMENTE todo
-            display: "flex",
-            justifyContent: "center", // Centra el video horizontalmente
-            alignItems: "center", // Centra el video verticalmente
+            display: 'flex',
+            justifyContent: 'center', // Centra el video horizontalmente
+            alignItems: 'center', // Centra el video verticalmente
             // position: 'fixed',      // 1. Lo fija en la pantalla, ignorando el scroll
             //   bottom: '20px',         // 2. Lo separa 20px del borde inferior
             //   right: '20px',          // 3. Lo separa 20px del borde derecho
@@ -84,33 +83,33 @@ export const Inicio = () => {
           <button
             onClick={() => setVideoActual(null)} // Al dar clic, vacía el estado y se cierra la pantalla
             style={{
-              position: "absolute",
-              top: "25px",
-              right: "25px",
+              position: 'absolute',
+              top: '25px',
+              right: '25px',
 
               // 1. Dimensiones y forma circular perfecta
-              width: "45px",
-              height: "45px",
-              borderRadius: "50%",
+              width: '45px',
+              height: '45px',
+              borderRadius: '50%',
 
               // 2. Colores solicitados
-              backgroundColor: "#000000", // Fondo negro
-              color: "#FFFFFF", // X blanca
+              backgroundColor: '#000000', // Fondo negro
+              color: '#FFFFFF', // X blanca
 
               // 3. Quitar bordes nativos y mejorar el cursor
-              border: "1px solid rgba(255, 255, 255, 0.3)", // Un sutil borde blanco para que no se pierda en el fondo oscuro
-              cursor: "pointer",
+              border: '1px solid rgba(255, 255, 255, 0.3)', // Un sutil borde blanco para que no se pierda en el fondo oscuro
+              cursor: 'pointer',
 
               // 4. Centrado perfecto de la tipografía "X"
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              fontSize: "20px",
-              fontWeight: "bold",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              fontSize: '20px',
+              fontWeight: 'bold',
 
               // 5. Efectos visuales profesionales
-              boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
-              transition: "all 0.2s ease",
+              boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
+              transition: 'all 0.2s ease',
             }}
           >
             ✕
@@ -124,9 +123,9 @@ export const Inicio = () => {
             controls
             autoPlay
             style={{
-              width: "100%",
-              height: "auto", // 3. Forzamos a que la altura dependa del video real
-              display: "block",
+              width: '100%',
+              height: 'auto', // 3. Forzamos a que la altura dependa del video real
+              display: 'block',
             }}
           >
             <source src={videoActual} type="video/mp4" />
@@ -136,31 +135,31 @@ export const Inicio = () => {
         </View>
       )}
       {/* ----------------------TABLA---------------------- */}
-      <View style={{ marginBottom: "30px" }}>
+      <View style={{ marginBottom: '30px' }}>
         {/* Header*/}
         <h2
           style={{
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#b1b1b1",
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#b1b1b1',
           }}
         >
           Horizontal - Mayor Tiempo Posible (Niños) 60%
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               {/* Un fondo semitransparente oscuro para que los encabezados se lean bien */}
-              <tr style={{ color: "#b1b1b1", fontSize: "16px" }}>
-                <th style={{ width: "30%", textAlign: "left", padding: "8px" }}>
+              <tr style={{ color: '#b1b1b1', fontSize: '16px' }}>
+                <th style={{ width: '30%', textAlign: 'left', padding: '8px' }}>
                   Para Mi-Palabras de Vida 60%
                 </th>
-                <th style={{ width: "20%", textAlign: "left", padding: "8px" }}>
+                <th style={{ width: '20%', textAlign: 'left', padding: '8px' }}>
                   FamEH
                 </th>
-                <th style={{ width: "20%", textAlign: "left", padding: "8px" }}>
+                <th style={{ width: '20%', textAlign: 'left', padding: '8px' }}>
                   FamExtEH
                 </th>
-                <th style={{ width: "30%", textAlign: "left", padding: "8px" }}>
+                <th style={{ width: '30%', textAlign: 'left', padding: '8px' }}>
                   Ellos-Medido N40%
                 </th>
               </tr>
@@ -169,98 +168,98 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         {/* Secciones*/}
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           ARVDJ (Felicidad) 60%
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRVDJ)}
                     type="button"
-                    style={{ backgroundColor: "blue", color: "white" }}
+                    style={{ backgroundColor: 'blue', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RVDJ}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Cristo
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Espiritu
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RVDJParaMi")}
+                    onClick={() => router.push('/RVDJParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContex
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RVDJFamEH")}
+                    onClick={() => router.push('/RVDJFamEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     EntEscrituras
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RVDJFamExtEH")}
+                    onClick={() => router.push('/RVDJFamExtEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     My Info
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RVDJEllos")}
+                    onClick={() => router.push('/RVDJEllos')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Ellos-Info
@@ -269,32 +268,32 @@ export const Inicio = () => {
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RVDJParaMi")}
+                    onClick={() => router.push('/RVDJParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Ayudar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Practicar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Ayudar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Practicar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Lugares
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoHabitos
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   AyudarRutAuto
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-RutAuto
                 </td>
               </tr>
@@ -304,106 +303,106 @@ export const Inicio = () => {
 
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           FAMEH (MC-V-AmistadAmorVerd-Felicidad)
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VFAMEH)}
                     type="button"
-                    style={{ backgroundColor: "purple", color: "white" }}
+                    style={{ backgroundColor: 'purple', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={FAMEH}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Cristo
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Espiritu
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/FAMEHParaMi")}
+                    onClick={() => router.push('/FAMEHParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContex
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/FAMEHFamEH")}
+                    onClick={() => router.push('/FAMEHFamEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     EntEscrituras(HomeDob)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/FAMEHFamExtEH")}
+                    onClick={() => router.push('/FAMEHFamExtEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     My Info
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/FAMEHEllos")}
+                    onClick={() => router.push('/FAMEHEllos')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Ellos-Info
@@ -412,34 +411,34 @@ export const Inicio = () => {
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/FAMEHParaMi")}
+                    onClick={() => router.push('/FAMEHParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Noches Hogar (Actividades) MyTiempo Posible (Niños)
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Practicar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Practicar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Lugares
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoHabitos
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   AyudarRutAuto
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-RutAuto
                 </td>
               </tr>
@@ -448,122 +447,122 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RInvAde (Vertical) Autosuf-Libertad-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRIntAde)}
                     type="button"
-                    style={{ backgroundColor: "purple", color: "white" }}
+                    style={{ backgroundColor: 'purple', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RInvAde}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvAdeParaMi")}
+                    onClick={() => router.push('/RInvAdeParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Master)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvAdeFamEH")}
+                    onClick={() => router.push('/RInvAdeFamEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     PlanInnovLog
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvAdeFamExtEH")}
+                    onClick={() => router.push('/RInvAdeFamExtEH')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     My Info
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvAdeParaMi")}
+                    onClick={() => router.push('/RInvAdeParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -572,115 +571,115 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           REnt (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VREnt)}
                     type="button"
-                    style={{ backgroundColor: "red", color: "white" }}
+                    style={{ backgroundColor: 'red', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={REnt}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/REntParaMi")}
+                    onClick={() => router.push('/REntParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Espe)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/REntParaMi")}
+                    onClick={() => router.push('/REntParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -689,106 +688,106 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RMnd (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRMun)}
                     type="button"
-                    style={{ backgroundColor: "red", color: "white" }}
+                    style={{ backgroundColor: 'red', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RMun}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RMunParaMi")}
+                    onClick={() => router.push('/RMunParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Espe)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RMunParaMi")}
+                    onClick={() => router.push('/RMunParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -797,106 +796,106 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RInv (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRInv)}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "white" }}
+                    style={{ backgroundColor: 'yellow', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RInv}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvParaMi")}
+                    onClick={() => router.push('/RInvParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Ing/Lic)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RInvParaMi")}
+                    onClick={() => router.push('/RInvParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -905,106 +904,106 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RTec (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRTec)}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "white" }}
+                    style={{ backgroundColor: 'yellow', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RTec}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RTecParaMi")}
+                    onClick={() => router.push('/RTecParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Ing/Lic)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RTecParaMi")}
+                    onClick={() => router.push('/RTecParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -1013,106 +1012,106 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RSal (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRSal)}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RSal}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RSalParaMi")}
+                    onClick={() => router.push('/RSalParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Cur)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RSalParaMi")}
+                    onClick={() => router.push('/RSalParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -1121,106 +1120,106 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            backgroundImage: "url(${RVDJ})",
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#ffffff",
+            backgroundImage: 'url(${RVDJ})',
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#ffffff',
           }}
         >
           RHab (Vertical) Bueno-Felicidad
           {/* Subtabla de 4 columnas x 4 renglones */}
           <table
             style={{
-              tableLayout: "fixed",
-              textAlign: "left",
-              width: "100%",
-              borderCollapse: "collapse",
+              tableLayout: 'fixed',
+              textAlign: 'left',
+              width: '100%',
+              borderCollapse: 'collapse',
             }}
           >
             <tbody>
               {/* Renglón 1 con imagen de fondo */}
               <tr>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   <button
                     onClick={() => manejarReproduccion(VRDep)}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     <img
                       src={RDep}
                       alt="View-RVDiosJ Porque? Felicidad Video"
-                      style={{ width: "50px", height: "50px" }}
+                      style={{ width: '50px', height: '50px' }}
                     />
                   </button>
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   Motivar Bueno
                 </td>
-                <td style={{ width: "20%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '20%', padding: '8px', color: '#b1b1b1' }}>
                   QQ
                 </td>
-                <td style={{ width: "30%", padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ width: '30%', padding: '8px', color: '#b1b1b1' }}>
                   Ellos-3Productos
                 </td>
               </tr>
               {/* Renglón 2 (puedes alternar colores o fondos) */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RDepParaMi")}
+                    onClick={() => router.push('/RDepParaMi')}
                     type="button"
-                    style={{ backgroundColor: "yellow", color: "black" }}
+                    style={{ backgroundColor: 'yellow', color: 'black' }}
                     className="btn btn-secondary btn-sm"
                   >
                     View-PreEntContexVertical-IA (Cur)
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   PlanInnovLog
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>My Info</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>My Info</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Servicios
                 </td>
               </tr>
               {/* Renglón 3 */}
               <tr>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   <button
-                    onClick={() => router.push("/RDepParaMi")}
+                    onClick={() => router.push('/RDepParaMi')}
                     type="button"
-                    style={{ backgroundColor: "green", color: "white" }}
+                    style={{ backgroundColor: 'green', color: 'white' }}
                     className="btn btn-secondary btn-sm"
                   >
                     Sim-ProPruebaRapAde
                   </button>
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Demo</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Probar</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Demo</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Probar</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Reparaciones
                 </td>
               </tr>
               {/* Renglón 4 */}
               <tr>
-                <td style={{ padding: "8px", color: "green" }}>
+                <td style={{ padding: '8px', color: 'green' }}>
                   Sim-PostRutAutoRobots
                 </td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>Suministro</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>RutAuto</td>
-                <td style={{ padding: "8px", color: "#b1b1b1" }}>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>Suministro</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>RutAuto</td>
+                <td style={{ padding: '8px', color: '#b1b1b1' }}>
                   Ellos-Empleo
                 </td>
               </tr>
@@ -1229,20 +1228,20 @@ export const Inicio = () => {
         </h2>
         <hr
           style={{
-            gridColumn: "1 / -1",
-            width: "100%",
-            border: "0",
-            borderTop: "1px solid #ccc",
-            margin: "10px 0",
+            gridColumn: '1 / -1',
+            width: '100%',
+            border: '0',
+            borderTop: '1px solid #ccc',
+            margin: '10px 0',
           }}
         />
 
         <h2
           style={{
-            textAlign: "left",
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#b1b1b1",
+            textAlign: 'left',
+            fontSize: '16px',
+            marginBottom: '10px',
+            color: '#b1b1b1',
           }}
         >
           Vertical - Espiral - Varias veces al día
