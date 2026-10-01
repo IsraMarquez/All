@@ -1,21 +1,83 @@
-import { router } from 'expo-router';
-import { Pressable, Text, View } from 'react-native';
+import { router, useLocalSearchParams } from 'expo-router';
+import { useEffect, useState } from 'react';
+import {
+  ActivityIndicator,
+  FlatList,
+  Pressable,
+  Text,
+  View,
+} from 'react-native';
+
+interface Curso {
+  id: number;
+  nombre: string;
+}
+
+interface subCategory {
+  id: number;
+  nombre: string;
+  cursos: Curso[];
+}
 
 const RVDJParaMi = () => {
+  const { id } = useLocalSearchParams();
+  const [subCategory, setSubCategory] = useState<subCategory[]>([]);
+  const [cargando, setCargando] = useState(true);
+
+  //Llamada a la base de datos
+  useEffect(() => {
+    if (id) {
+      fetch(`http://10.1.5.50:3000/subcategory/${id}`)
+        .then((res) => res.json())
+        .then((data: subCategory[]) => {
+          setSubCategory(data);
+        })
+        .catch((err) => console.error(err))
+        .finally(() => setCargando(false));
+    }
+  }, [id]);
+
+  if (cargando) return <ActivityIndicator className="flex-1" size="large" />;
+  //console.log('SubCategoría cargada:', subCategory);
+
   return (
-    <View className="mt-3">
-      <Text className="font-extrabold text-2xl">Felicidad (Vida Eterna)</Text>
-      <Pressable onPress={() => router.push('/ClasesScreen')}>
-        <Text className="font-bold">Vida Eterna</Text>
-        <Text className="">Costo: $0</Text>
-        <Text className="">Raite: 5</Text>
-      </Pressable>
-      <Pressable onPress={() => router.push('/ClasesScreen')}>
-        <Text className="font-bold">Exaltacion</Text>
-        <Text className="">Costo: $10</Text>
-        <Text className="">Raite: 5</Text>
-      </Pressable>
-    </View>
+    <FlatList
+      className="flex flex-1 px-4"
+      data={subCategory}
+      keyExtractor={(item) => item.id.toString()}
+      renderItem={({ item }) => (
+        <View className="mt-3">
+          <Text className="font-bold text-black">{item.nombre}</Text>
+
+          {/* Sublista de Cursos pertenecientes a este Tema */}
+          {item.cursos.length > 0 ? (
+            item.cursos.map((curso) => (
+              <Pressable
+                key={curso.id}
+                className="bg-indigo-50 p-3 rounded-lg mb-2 flex-row justify-between items-center active:opacity-70"
+                onPress={() =>
+                  router.push({
+                    pathname: '/ClasesScreen', // Ruta de destino
+                    params: { id: curso.id }, // ID individual del curso seleccionado
+                  })
+                }
+              >
+                <Text className="text-gray-800 font-medium text-base">
+                  {curso.nombre}
+                </Text>
+                <Text className="text-indigo-600 text-xs font-semibold">
+                  Ver →
+                </Text>
+              </Pressable>
+            ))
+          ) : (
+            <Text className="text-gray-400 italic text-sm">
+              No hay cursos disponibles para este item.
+            </Text>
+          )}
+        </View>
+      )}
+    />
   );
 };
 

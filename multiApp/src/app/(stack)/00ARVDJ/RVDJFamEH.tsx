@@ -1,22 +1,21 @@
-//import { useNavigate } from 'react-router-dom';
+import { router } from 'expo-router';
+import { Pressable, Text, View } from 'react-native';
 
-export const RVDJFamEH = () => {
-  // 1. Inicializas la función de navegaciónconst router = useRouter();
-  const router = useRouter();
+const RVDJFamEH = () => {
   return (
-    <div>
-      Profetas Modernos
-      <br />
-      Doctrina y Convenios
-      <br />
-      <button
-        onClick={() => router.push(-1)}
-        type="button"
-        style={{ backgroundColor: "black", color: "white" }}
-        className="btn btn-secondary btn-sm"
-      >
-        Regresar
-      </button>
-    </div>
+    <View className="mt-3">
+      <Pressable onPress={() => router.push('/ClasesScreen')}>
+        <Text className="font-bold">Profetas Modernos</Text>
+        <Text className="">Costo: $0</Text>
+        <Text className="">Raite: 5</Text>
+      </Pressable>
+      <Pressable onPress={() => router.push('/ClasesScreen')}>
+        <Text className="font-bold">Doctrina y Convenios</Text>
+        <Text className="">Costo: $10</Text>
+        <Text className="">Raite: 5</Text>
+      </Pressable>
+    </View>
   );
 };
+
+export default RVDJFamEH;

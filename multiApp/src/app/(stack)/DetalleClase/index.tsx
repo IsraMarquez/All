@@ -1,11 +1,10 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
-  ActivityIndicator,
-  FlatList,
-  Pressable,
-  Text,
-  View,
+    ActivityIndicator,
+    FlatList,
+    Text,
+    View
 } from 'react-native';
 
 interface clases {
@@ -13,7 +12,7 @@ interface clases {
   nombre: string;
 }
 
-const ClasesScreen = () => {
+const DetalleClase = () => {
   const { id } = useLocalSearchParams();
   const [clases, setClases] = useState<clases[]>([]);
   const [cargando, setCargando] = useState(true);
@@ -21,7 +20,7 @@ const ClasesScreen = () => {
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://10.1.5.50:3000/clases/${id}`)
+      fetch(`http://10.1.5.50:3000/detalleclase/${id}`)
         .then((res) => res.json())
         .then((data: clases[]) => {
           setClases(data);
@@ -41,25 +40,13 @@ const ClasesScreen = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Pressable
-            key={item.id}
-            className="bg-indigo-50 p-3 rounded-lg mb-2 flex-row justify-between items-center active:opacity-70"
-            onPress={() =>
-              router.push({
-                pathname: '/DetalleClase', // Ruta de destino
-                params: { id: item.id }, // ID individual del curso seleccionado
-              })
-            }
-          >
-            <Text className="text-gray-800 font-medium text-base">
-              {item.nombre}
-            </Text>
-            <Text className="text-indigo-600 text-xs font-semibold">Ver →</Text>
-          </Pressable>
+          <Text className="text-gray-800 font-medium text-base">
+            {item.nombre}
+          </Text>
         </View>
       )}
     />
   );
 };
 
-export default ClasesScreen;
+export default DetalleClase;
