@@ -2,8 +2,9 @@ export const products = [
   {
     id: '1',
     title: 'React Expo',
-    description:
-      'Experimenta una calidad de sonido premium con estos auriculares inalámbricos. Diseñados para la comodidad y el uso prolongado, son perfectos para amantes de la música y profesionales por igual.',
+    description: `En esta clase aprenderás las bases del enrutamiento basado en archivos.
+Esta es de prueba
+          -Anotar los objetivos`,
     price: 99.99,
     raite: 5,
     clases: [

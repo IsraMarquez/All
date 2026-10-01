@@ -12,7 +12,7 @@ const ProductScreen = () => {
   }
 
   return (
-    <ScrollView className="px-5 mt-10">
+    <ScrollView className="px-5 mt-3">
       <Text className="font-bold text-2xl">{product.title}</Text>
       <Text className="">{product.description}</Text>
     </ScrollView>

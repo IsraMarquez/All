@@ -20,7 +20,7 @@ const StackLayout = () => {
       <Stack.Screen
         name="00ARVDJ/RVDJParaMi"
         options={{
-          title: 'RVDJ_ParaMi',
+          title: 'RVDJ ParaMi',
           animation: 'fade',
         }}
       />
@@ -28,6 +28,13 @@ const StackLayout = () => {
         name="ClasesScreen/index"
         options={{
           title: 'Clases',
+          animation: 'fade',
+        }}
+      />
+      <Stack.Screen
+        name="ClasesScreen/[id]"
+        options={{
+          title: 'Detalle de Clase',
           animation: 'fade',
         }}
       />
