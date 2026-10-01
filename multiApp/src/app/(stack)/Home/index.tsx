@@ -1,6 +1,5 @@
-import CustomButton from '@/components/shared/CustomButton';
-import { Link, router } from 'expo-router';
-import { View } from 'react-native';
+import { router } from 'expo-router';
+import { Pressable, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 // import RVDJ from '@/assets/sprites/Abuelo.png';
@@ -27,21 +26,23 @@ const Home = () => {
 
   return (
     <SafeAreaView>
-      <View className="px-10 mt-5">
+      {/* <View className="px-10 mt-5">
         <Link href="/ProductsScreen" asChild>
           <CustomButton color="primary">Productos1</CustomButton>
-        </Link>
-
-        <CustomButton
+        </Link> */}
+      <Pressable onPress={() => router.push('/00ARVDJ/RVDJParaMi')}>
+        <Text>Div-EntContext</Text>
+      </Pressable>
+      {/* <CustomButton
           color="primary"
           onPress={() => router.push('/ProductsScreen')}
         >
           Productos2
-        </CustomButton>
-        {/* <Link className="mb-5" href="/products">
+        </CustomButton> */}
+      {/* <Link className="mb-5" href="/products">
           Products
         </Link> */}
-      </View>
+      {/* </View> */}
     </SafeAreaView>
 
     //-------------------------------------------------------

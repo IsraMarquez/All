@@ -1,6 +1,6 @@
 import { products } from '@/store/products.store';
 import { Redirect, useLocalSearchParams } from 'expo-router';
-import { Text, View } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 
 const ProductScreen = () => {
   const { id } = useLocalSearchParams();
@@ -12,11 +12,10 @@ const ProductScreen = () => {
   }
 
   return (
-    <View className="px-5 mt-10">
+    <ScrollView className="px-5 mt-10">
       <Text className="font-bold text-2xl">{product.title}</Text>
       <Text className="">{product.description}</Text>
-      <Text className="font-work-black">{product.price}</Text>
-    </View>
+    </ScrollView>
   );
 };
 

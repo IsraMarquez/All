@@ -18,9 +18,16 @@ const StackLayout = () => {
         }}
       />
       <Stack.Screen
-        name="ProductsScreen/index"
+        name="00ARVDJ/RVDJParaMi"
         options={{
-          title: 'Productos',
+          title: 'RVDJ_ParaMi',
+          animation: 'fade',
+        }}
+      />
+      <Stack.Screen
+        name="ClasesScreen/index"
+        options={{
+          title: 'Clases',
           animation: 'fade',
         }}
       />
