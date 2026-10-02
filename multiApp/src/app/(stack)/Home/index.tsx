@@ -30,9 +30,13 @@ const Home = () => {
     // Retardo mínimo para asegurar que el reproductor inicie antes del Fullscreen
     setTimeout(() => {
       if (refVideo.current) {
-        refVideo.current.enterFullscreen();
+        player.play();
       }
     }, 100);
+  };
+    const cerrarVideo = () => {
+    player.pause();
+    setEsPantallaCompleta(false);
   };
 
   //Navegacion
@@ -47,22 +51,20 @@ const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       {/* Video */}
+      {esPantallaCompleta && (
+        <View style={styles.contenedorFullscreen}>
+
       <VideoView
         ref={refVideo}
         player={player}
         style={esPantallaCompleta ? styles.estiloVideo : styles.estiloOculto}
-        allowsFullscreen
         allowsPictureInPicture
-        // DETECTOR CLAVE: Se dispara cuando cambia el estado de pantalla completa
-        onFullscreenChange={({ isFullscreen }) => {
-          setEsPantallaCompleta(isFullscreen);
-
-          // Opcional: Si deseas pausar el video al salir de la pantalla completa
-          if (!isFullscreen) {
-            player.pause();
-          }
-        }}
-      />
+        />
+      <Pressable style={styles.botonCerrarFlotante} onPress={cerrarVideo}>
+        <Text style={styles.textoCerrar}>✕</Text>
+      </Pressable>
+        </View>
+      )}
 
       {/* Encabezado */}
       <View className="border border-white rounded-lg overflow-hidden m-1">
@@ -285,10 +287,22 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
+  // Ocupa el 100% de la pantalla del navegador
+  contenedorFullscreen: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#000000',
+    zIndex: 9999,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   // Tamaño visible normal cuando se va a reproducir
   estiloVideo: {
-    width: 320,
-    height: 180,
+    width: '100%',
+    height: '100%', 
     borderRadius: 8,
     marginBottom: 20,
   },
@@ -297,5 +311,20 @@ const styles = StyleSheet.create({
     width: 1,
     height: 1,
     opacity: 0,
+  },
+  botonCerrarFlotante: {
+    position: 'absolute',
+    top: 30,
+    right: 30,
+    backgroundColor: 'rgba(0, 0, 0, 255)',
+    paddingVertical: 10,
+    paddingHorizontal: 18,
+    borderRadius: 8,
+    zIndex: 10000,
+  },
+  textoCerrar: {
+    color: '#ffffff',
+    fontSize: 14,
+    fontWeight: 'bold',
   },
 });

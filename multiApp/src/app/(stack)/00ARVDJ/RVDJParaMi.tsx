@@ -27,7 +27,8 @@ const RVDJParaMi = () => {
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://10.1.5.50:3000/subcategory/${id}`)
+      fetch(`http://192.168.100.90:3000/subcategory/${id}`)
+      //fetch(`http://10.1.5.50:3000/subcategory/${id}`)
         .then((res) => res.json())
         .then((data: subCategory[]) => {
           setSubCategory(data);

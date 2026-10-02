@@ -1,10 +1,10 @@
 import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
-    ActivityIndicator,
-    FlatList,
-    Text,
-    View
+  ActivityIndicator,
+  FlatList,
+  Text,
+  View
 } from 'react-native';
 
 interface clases {
@@ -20,7 +20,8 @@ const DetalleClase = () => {
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://10.1.5.50:3000/detalleclase/${id}`)
+      fetch(`http://192.168.100.90:3000/detalleclase/${id}`)
+      //fetch(`http://10.1.5.50:3000/detalleclase/${id}`)
         .then((res) => res.json())
         .then((data: clases[]) => {
           setClases(data);
