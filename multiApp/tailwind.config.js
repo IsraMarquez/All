@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   // Asegúrate de incluir las rutas a todos tus componentes/pantallas
   content: [
     './app/**/*.{js,jsx,ts,tsx}',
