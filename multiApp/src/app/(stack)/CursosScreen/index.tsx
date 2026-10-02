@@ -1,3 +1,4 @@
+import { useUbicacion } from '@/context/UbicacionContext';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
@@ -23,12 +24,13 @@ const RVDJParaMi = () => {
   const { id } = useLocalSearchParams();
   const [subCategory, setSubCategory] = useState<subCategory[]>([]);
   const [cargando, setCargando] = useState(true);
+  const { ubicacion, cambiarUbicacion } = useUbicacion();
 
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://192.168.100.90:3000/subcategory/${id}`)
-      //fetch(`http://10.1.5.50:3000/subcategory/${id}`)
+      console.log('Ubicacion', ubicacion);
+      fetch(`${ubicacion}/subcategory/${id}`)
         .then((res) => res.json())
         .then((data: subCategory[]) => {
           setSubCategory(data);
@@ -48,7 +50,7 @@ const RVDJParaMi = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Text className="font-bold text-black">{item.nombre}</Text>
+          <Text className="font-bold text-white">{item.nombre}</Text>
 
           {/* Sublista de Cursos pertenecientes a este Tema */}
           {item.cursos.length > 0 ? (

@@ -6,26 +6,27 @@ const StackLayout = () => {
       screenOptions={{
         //headerShown: false, //quitar header
         headerShadowVisible: false,
+        headerStyle: {
+          backgroundColor: 'black',
+          height: 20, // Ajusta una altura más compacta (por defecto suele ser 80-100px)
+        },
+        headerTitleStyle: {
+          fontSize: 16, // Reduce ligeramente el tamaño del título
+          color: 'white',
+        },
         contentStyle: {
-          backgroundColor: 'white',
+          backgroundColor: 'black',
         },
       }}
     >
       <Stack.Screen
-        name="Home/index"
+        name="Home"
         options={{
           title: 'Inicio',
         }}
       />
       <Stack.Screen
-        name="00ARVDJ/RVDJParaMi"
-        options={{
-          title: 'Cursos',
-          animation: 'fade',
-        }}
-      />
-      <Stack.Screen
-        name="00ARVDJ/RVDJFamEH"
+        name="CursosScreen"
         options={{
           title: 'Cursos',
           animation: 'fade',

@@ -1,11 +1,7 @@
+import { useUbicacion } from '@/context/UbicacionContext';
 import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
-import {
-  ActivityIndicator,
-  FlatList,
-  Text,
-  View
-} from 'react-native';
+import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 
 interface clases {
   id: number;
@@ -16,12 +12,12 @@ const DetalleClase = () => {
   const { id } = useLocalSearchParams();
   const [clases, setClases] = useState<clases[]>([]);
   const [cargando, setCargando] = useState(true);
+  const { ubicacion, cambiarUbicacion } = useUbicacion();
 
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://192.168.100.90:3000/detalleclase/${id}`)
-      //fetch(`http://10.1.5.50:3000/detalleclase/${id}`)
+      fetch(`${ubicacion}/detalleclase/${id}`)
         .then((res) => res.json())
         .then((data: clases[]) => {
           setClases(data);
@@ -41,7 +37,7 @@ const DetalleClase = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Text className="text-gray-800 font-medium text-base">
+          <Text className="text-white font-medium text-base">
             {item.nombre}
           </Text>
         </View>

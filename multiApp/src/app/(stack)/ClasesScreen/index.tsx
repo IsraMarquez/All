@@ -1,3 +1,4 @@
+import { useUbicacion } from '@/context/UbicacionContext';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
@@ -17,12 +18,12 @@ const ClasesScreen = () => {
   const { id } = useLocalSearchParams();
   const [clases, setClases] = useState<clases[]>([]);
   const [cargando, setCargando] = useState(true);
+  const { ubicacion, cambiarUbicacion } = useUbicacion();
 
   //Llamada a la base de datos
   useEffect(() => {
     if (id) {
-      fetch(`http://192.168.100.90:3000/clases/${id}`)
-      //fetch(`http://10.1.5.50:3000/clases/${id}`)
+      fetch(`${ubicacion}/clases/${id}`)
         .then((res) => res.json())
         .then((data: clases[]) => {
           setClases(data);

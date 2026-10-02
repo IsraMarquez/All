@@ -1,8 +1,8 @@
 import { useFonts } from 'expo-font';
 import { Slot, SplashScreen } from 'expo-router';
 import { useEffect } from 'react';
-
 import '../../global.css';
+import { UbicacionProvider } from '../context/UbicacionContext';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -20,5 +20,9 @@ export default function RootLayout() {
   }, [fontsLoaded, error]);
   if (!fontsLoaded && !error) return null;
 
-  return <Slot />;
+  return (
+    <UbicacionProvider>
+      <Slot />
+    </UbicacionProvider>
+  );
 }
