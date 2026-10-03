@@ -46,13 +46,21 @@ const RVDJParaMi = () => {
   }, [id]);
 
   if (cargando) return <ActivityIndicator className="flex-1" size="large" />;
-  console.log('SubCategoría cargada:', subCategory);
+  if (subCategory.length === 0) {
+    return (
+      <View>
+        <Text className="text-gray-400 italic text-sm">No hay cursos disponibles para esta categoría.</Text>
+      </View>
+    );
+  }
+  //console.log('SubCategoría cargada:', subCategory);
 
   return (
     <FlatList
       className="flex flex-1 px-4"
       data={subCategory}
       keyExtractor={(item) => item.id.toString()}
+      
       renderItem={({ item }) => (
         <View className="mt-3">
           <Text style={{ backgroundColor: item.temaColorStr, padding: 5, borderRadius: 8}} className="font-bold text-white">{item.nombre}</Text>

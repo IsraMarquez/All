@@ -29,7 +29,14 @@ const DetalleClase = () => {
   }, [id]);
 
   if (cargando) return <ActivityIndicator className="flex-1" size="large" />;
-  console.log('Clases cargada:', clases);
+  if (clases.length === 0) {
+    return (
+      <View>
+        <Text className="text-gray-400 italic text-sm">No hay contenido para esta clase.</Text>
+      </View>
+    );
+  }
+  //console.log('Clases cargada:', clases);
 
   return (
     <FlatList
