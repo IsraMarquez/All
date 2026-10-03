@@ -12,6 +12,7 @@ import {
 interface clases {
   id: number;
   nombre: string;
+  colorStr: string;
 }
 
 const ClasesScreen = () => {
@@ -45,6 +46,7 @@ const ClasesScreen = () => {
         <View className="mt-3">
           <Pressable
             key={item.id}
+            style={{ backgroundColor: item.colorStr}}
             className="bg-indigo-50 p-3 rounded-lg mb-2 flex-row justify-between items-center active:opacity-70"
             onPress={() =>
               router.push({

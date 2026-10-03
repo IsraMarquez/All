@@ -12,11 +12,16 @@ import {
 interface Curso {
   id: number;
   nombre: string;
+  precio: number,
+  avance: number,
+  plataforma: string,
+  colorStr: string,
 }
 
 interface subCategory {
   id: number;
   nombre: string;
+  temaColorStr: string;
   cursos: Curso[];
 }
 
@@ -41,7 +46,7 @@ const RVDJParaMi = () => {
   }, [id]);
 
   if (cargando) return <ActivityIndicator className="flex-1" size="large" />;
-  //console.log('SubCategoría cargada:', subCategory);
+  console.log('SubCategoría cargada:', subCategory);
 
   return (
     <FlatList
@@ -50,13 +55,14 @@ const RVDJParaMi = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Text className="font-bold text-white">{item.nombre}</Text>
+          <Text style={{ backgroundColor: item.temaColorStr, padding: 5, borderRadius: 8}} className="font-bold text-white">{item.nombre}</Text>
 
           {/* Sublista de Cursos pertenecientes a este Tema */}
           {item.cursos.length > 0 ? (
             item.cursos.map((curso) => (
               <Pressable
                 key={curso.id}
+                style={{ backgroundColor: curso.colorStr}}
                 className="bg-indigo-50 p-3 rounded-lg mb-2 flex-row justify-between items-center active:opacity-70"
                 onPress={() =>
                   router.push({
@@ -66,7 +72,7 @@ const RVDJParaMi = () => {
                 }
               >
                 <Text className="text-gray-800 font-medium text-base">
-                  {curso.nombre}
+                  {`Titulo: ${curso.nombre}\nPlataforma: ${curso.plataforma}\nPrecio: $${curso.precio}\nAvance: ${curso.avance}%`}
                 </Text>
                 <Text className="text-indigo-600 text-xs font-semibold">
                   Ver →

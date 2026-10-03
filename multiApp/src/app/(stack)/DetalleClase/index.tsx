@@ -6,6 +6,7 @@ import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 interface clases {
   id: number;
   nombre: string;
+  colorStr: string;
 }
 
 const DetalleClase = () => {
@@ -37,7 +38,7 @@ const DetalleClase = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Text className="text-white font-medium text-base">
+          <Text style={{ color: item.colorStr}} className="font-medium text-base">
             {item.nombre}
           </Text>
         </View>
