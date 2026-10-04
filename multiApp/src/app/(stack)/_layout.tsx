@@ -6,9 +6,10 @@ const StackLayout = () => {
       screenOptions={{
         //headerShown: false, //quitar header
         headerShadowVisible: false,
+        headerTintColor: 'white',
         headerStyle: {
           backgroundColor: 'black',
-          height: 20, // Ajusta una altura más compacta (por defecto suele ser 80-100px)
+          height: 30, // Ajusta una altura más compacta (por defecto suele ser 80-100px)
         },
         headerTitleStyle: {
           fontSize: 16, // Reduce ligeramente el tamaño del título
