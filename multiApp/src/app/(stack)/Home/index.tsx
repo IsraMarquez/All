@@ -133,6 +133,7 @@ const Home = () => {
         </View>
       </View>
       <ScrollView>
+
         {/* ARVDJ */}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           {/* Fila 1 */}
@@ -151,7 +152,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left'">
-              Motivar Cristo
+              Motivar Cristo (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left">
               QQ
@@ -167,7 +168,7 @@ const Home = () => {
               onPress={() => manejarPresion(1, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-600 text-left">
-                Div-PreEntContex
+                Div-PreEntContex-> Plan
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-indigo-800 font-bold text-amber-800 text-left">
@@ -177,7 +178,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-indigo-950 font-bold text-amber-950 text-left">
-              Ellos-Info (Indicadores)
+              Ellos-Info
             </Text>
           </View>
           {/* Fila 3 */}
@@ -194,10 +195,10 @@ const Home = () => {
               Ayudar
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
-              Practicar
+              Practicar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-indigo-950 font-bold text-gray-950 text-left">
-              Ellos-Lugares (Indicadores)
+              Ellos-Lugares
             </Text>
           </View>
           {/* Fila 4 */}
@@ -236,7 +237,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              Motivar Cristo
+              Motivar Cristo (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               QQ
@@ -252,7 +253,7 @@ const Home = () => {
               onPress={() => manejarPresion(2, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-600 text-left">
-                Div-PreEntContex
+                Div-PreEntContex-> Plan
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-violet-800 text-amber-800 text-left">
@@ -262,7 +263,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] font-bold bg-violet-950 text-amber-950 text-left">
-              Ellos-Info (Indicadores)
+              Ellos-Info
             </Text>
           </View>
           {/* Fila 3 */}
@@ -279,10 +280,10 @@ const Home = () => {
               Noches Hogar (Actividades) MyTiempo Posible (Niños)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Practicar
+              Practicar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Lugares (Indicadores)
+              Ellos-Lugares
             </Text>
           </View>
           {/* Fila 4 */}
@@ -321,7 +322,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               QQ
@@ -337,7 +338,7 @@ const Home = () => {
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Master)
+                Div-PreEntContexVertical-IA-> Plan (Master)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-amber-800 text-left">
@@ -347,7 +348,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -364,7 +365,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -381,7 +382,6 @@ const Home = () => {
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               RutAuto
             </Text>
-
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
             </Text>
@@ -406,7 +406,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               QQ
@@ -422,7 +422,7 @@ const Home = () => {
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Espe)
+                Div-PreEntContexVertical-IA-> Plan (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
@@ -432,7 +432,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -449,7 +449,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -491,7 +491,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               QQ
@@ -507,7 +507,7 @@ const Home = () => {
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Espe)
+                Div-PreEntContexVertical-IA-> Plan (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
@@ -517,7 +517,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -534,7 +534,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -576,7 +576,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
               QQ
@@ -592,7 +592,7 @@ const Home = () => {
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Ing/Lic)
+                Div-PreEntContexVertical-IA-> Plan (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -602,7 +602,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -619,7 +619,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -661,7 +661,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
               QQ
@@ -677,7 +677,7 @@ const Home = () => {
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Ing/Lic)
+                Div-PreEntContexVertical-IA-> Plan (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -687,7 +687,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -704,7 +704,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -745,7 +745,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
               QQ
@@ -761,7 +761,7 @@ const Home = () => {
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Cur)
+                Div-PreEntContexVertical-IA-> Plan (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-green-800 text-amber-800 text-left">
@@ -771,7 +771,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] font-bold bg-green-950 text-amber-950 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -788,7 +788,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -830,7 +830,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              Motivar Bueno
+              Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
               QQ
@@ -846,7 +846,7 @@ const Home = () => {
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                Div-PreEntContexVertical-IA (Cur)
+                Div-PreEntContexVertical-IA-> Plan (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-amber-800 text-left">
@@ -856,7 +856,7 @@ const Home = () => {
               My Info
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios (Indicadores)
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -873,7 +873,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar
+              Probar (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
