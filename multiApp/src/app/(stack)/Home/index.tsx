@@ -8,6 +8,7 @@ import {
   Pressable,
   ScrollView,
   StyleSheet,
+  TextInput,
   Text,
   View,
 } from 'react-native';
@@ -32,13 +33,15 @@ const Home = () => {
   // Estado para controlar la modalidad (true = Oficina, false = Casa)
   const [esOficina, setEsOficina] = useState(false);
   const { ubicacion, cambiarUbicacion } = useUbicacion();
+  const [nuevaIp, setNuevaIp] = useState('http://10.1.5.49:3000');
+
   const checarUbicacion = (modoOficina: boolean) => {
     setEsOficina(modoOficina);
     // Aquí puedes hacer un fetch() o guardar el estado en tu Base de Datos
     console.log('Modo cambiado a:', modoOficina ? 'Oficina' : 'Casa');
 
     if (modoOficina) {
-      cambiarUbicacion('http://10.1.5.48:3000');
+      cambiarUbicacion(nuevaIp);
     } else {
       cambiarUbicacion('http://192.168.100.90:3000');
     }
@@ -902,9 +905,22 @@ const Home = () => {
         </Text>
 
         {/* Cambio de red */}
+        
         <View className="flex-[2] justify-center items-center p-4 bg-black-100">
-          {/* Contenedor tipo Toggle segmentado */}
           <View className="flex-row bg-black p-1 rounded-xl w-64">
+            <TextInput
+            value={nuevaIp}
+            onChangeText={setNuevaIp}
+            placeholder="http://10.1.5.49:3000"
+            keyboardType="default"
+            className="w-full border border-gray-300 p-3 rounded-lg mb-4 text-white"
+            />
+          </View>
+        </View>
+        <View className="flex-[2] justify-center items-center p-4 bg-black-100">
+          <View className="flex-row bg-black p-1 rounded-xl w-64">
+          {/* Contenedor tipo Toggle segmentado */}
+
             {/* Opción Oficina */}
             <Pressable
               onPress={() => checarUbicacion(true)}
