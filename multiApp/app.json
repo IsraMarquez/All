@@ -21,6 +21,7 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "title": "All",
       "output": "static",
       "userInterfaceStyle": "dark",
       "favicon": "./assets/images/favicon.png"

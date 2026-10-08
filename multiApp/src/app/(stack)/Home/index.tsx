@@ -3,6 +3,7 @@ import { useEventListener } from 'expo';
 import { useRouter } from 'expo-router';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useRef, useState } from 'react';
+import Head from 'expo-router/head';
 import {
   Image,
   Pressable,
@@ -99,7 +100,12 @@ const Home = () => {
     });
   };
   return (
+      
     <SafeAreaView style={{ flex: 1 }}>
+    <Head>
+        <title>All</title> 
+        <meta name="description" content="All" />
+      </Head>
       {/* Video */}
       {esPantallaCompleta && (
         <View style={styles.contenedorFullscreen}>
