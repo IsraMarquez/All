@@ -33,7 +33,9 @@ const DetalleClase = () => {
   if (clases.length === 0) {
     return (
       <View>
-        <Text className="text-gray-400 italic text-sm">No hay contenido para esta clase.</Text>
+        <Text className="text-gray-400 italic text-sm">
+          No hay contenido para esta clase.
+        </Text>
       </View>
     );
   }
@@ -46,10 +48,25 @@ const DetalleClase = () => {
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <View className="mt-3">
-          <Text style={{ color: item.colorStr, fontSize: 26, padding: 5, borderRadius: 8}} className="font-bold text-white">{item.nombre}</Text>
+          <Text
+            style={{
+              color: item.colorStr,
+              fontSize: 26,
+              padding: 5,
+              borderRadius: 8,
+            }}
+            className="font-bold text-white"
+          >
+            {item.nombre}
+          </Text>
 
-          <Text style={{ color: item.colorStr, fontSize: 20}} className="text-justify">
-            {item.descripcion}
+          <Text
+            style={{ color: item.colorStr, fontSize: 20 }}
+            className="text-justify"
+          >
+            {item.descripcion.replace(/@/g, '\n')}
+
+            {/* {item.descripcion} */}
           </Text>
         </View>
       )}
