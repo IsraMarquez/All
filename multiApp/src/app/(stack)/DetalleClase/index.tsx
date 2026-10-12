@@ -1,7 +1,7 @@
-import { useUbicacion } from "@/context/UbicacionContext";
-import { useLocalSearchParams } from "expo-router";
-import { useVideoPlayer, VideoView } from "expo-video";
-import { useEffect, useRef, useState } from "react";
+import { useUbicacion } from '@/context/UbicacionContext';
+import { useLocalSearchParams } from 'expo-router';
+import { useVideoPlayer, VideoView } from 'expo-video';
+import { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   FlatList,
@@ -9,15 +9,23 @@ import {
   Platform,
   Text,
   View,
-} from "react-native";
+} from 'react-native';
 const videoUrl =
-  "https://cuauhtemocqro-my.sharepoint.com/personal/ismarquez_ucq_edu_mx/_layouts/15/embed.aspx?UniqueId=6564616f-87a8-47a4-969a-b21ac2772b96&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create";
+  'https://cuauhtemocqro-my.sharepoint.com/personal/ismarquez_ucq_edu_mx/_layouts/15/embed.aspx?UniqueId=6564616f-87a8-47a4-969a-b21ac2772b96&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create';
+
+interface Asset {
+  id: number;
+  nombre: string;
+  tipo: string;
+  ubicacion: string;
+}
 
 interface clases {
   id: number;
   nombre: string;
   descripcion: string;
   colorStr: string;
+  assets: Asset[];
 }
 
 const DetalleClase = () => {
@@ -25,7 +33,7 @@ const DetalleClase = () => {
   const [clases, setClases] = useState<clases[]>([]);
   const [cargando, setCargando] = useState(true);
   const { ubicacion, cambiarUbicacion } = useUbicacion();
-  const [tipo_contenido, setTipo_contenido] = useState("Excel");
+  const [tipo_contenido, setTipo_contenido] = useState('Excel');
   const refVideo = useRef<VideoView>(null);
 
   const player = useVideoPlayer(videoUrl, (p) => {
@@ -55,63 +63,78 @@ const DetalleClase = () => {
       </View>
     );
   }
-  console.log("Clases cargada:", clases);
+  //console.log('Clases cargada:', clases);
   //-----------------------------------------------------------------------------------------------------------
 
-  const rederContent = (tipo_contenido: string) => {
+  const rederContent = (tipo_contenido: string, ubicacion: string) => {
+    //console.log('TipoCont', tipo_contenido);
     switch (tipo_contenido) {
-      case "GSheets":
+      case 'GSheets':
         return (
           <View>
-            <iframe
-              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQvikBGynGfKip-qKsbvXm6lj43GAiAymIOzm2ccOcnFj0QvVqHia0nDKXqqC4SHth5jZfRPU1vTUEu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=true"
-              width="80%"
-              height="400px"
-            ></iframe>
+            <iframe src={ubicacion} width="100%" height="400px"></iframe>
           </View>
         );
 
-      case "Imagen":
+      case 'Imagen':
         return (
           <View>
             <Image
               source={{
-                uri: "http://localhost:3000/images/img/barraAzul.png",
+                uri: ubicacion,
               }}
-              style={{ width: "100%", height: 300 }}
+              style={{ width: '100%', height: 300 }}
               resizeMode="contain"
             />
           </View>
         );
 
-      case "Pdf":
+      case 'Pdf':
         return (
           <View>
             {/* En Expo Web, las etiquetas HTML estándar funcionan mediante interoperabilidad */}
             <iframe
-              src="http://localhost:3000/images/pdf/RC.pdf"
-              style={{ width: "100%", height: 600 }}
+              src={ubicacion}
+              style={{ width: '100%', height: 600 }}
               title="Visor de PDF"
             />
           </View>
         );
 
-      case "Video":
+      case 'Video':
         //  SI ESTAMOS EN LA WEB: Usamos un iframe de HTML tradicional
-        if (Platform.OS === "web") {
+        if (Platform.OS === 'web') {
           return (
             <View>
               <iframe
-                src={videoUrl}
+                src={ubicacion}
                 width="100%"
                 height="100%"
-                style={{ border: "none", maxWidth: "640px", height: "360px" }}
+                style={{ border: 'none', maxWidth: '640px', height: '360px' }}
                 allowFullScreen
                 title="Video SharePoint Web"
               />
             </View>
           );
         }
+
+      case 'Sonido':
+        //  SI ESTAMOS EN LA WEB: Usamos un iframe de HTML tradicional
+        if (Platform.OS === 'web') {
+          return (
+            <View>
+              <iframe
+                src={ubicacion}
+                width="100%"
+                height="100%"
+                style={{ border: 'none', maxWidth: '640px', height: '360px' }}
+                allow="autoplay"
+              />
+            </View>
+          );
+        }
+      default:
+        <View></View>;
     }
   };
   //-----------------------------------------------------------------------------------------------------------
@@ -139,13 +162,24 @@ const DetalleClase = () => {
             style={{ color: item.colorStr, fontSize: 20 }}
             className="text-justify"
           >
-            {item.descripcion.replace(/@/g, "\n")}
+            {item.descripcion.replace(/@/g, '\n')}
 
             {/* {item.descripcion} */}
           </Text>
+          <br />
 
           {/* ----------------------Visualizar contenido externo-----------------------------------------------------*/}
-          <View>{rederContent("Pdf")}</View>
+          {/* Sublista de Cursos pertenecientes a este Tema */}
+          {item.assets.length > 0
+            ? item.assets.map((asset) => (
+                <View key={asset.id}>
+                  {asset.ubicacion && asset.ubicacion.trim() !== ''
+                    ? rederContent(asset.tipo, asset.ubicacion)
+                    : null}
+                  <br />
+                </View>
+              ))
+            : null}
           {/* ----------------------Visualizar contenido externo-----------------------------------------------------*/}
         </View>
       )}

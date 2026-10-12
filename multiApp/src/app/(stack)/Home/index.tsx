@@ -937,7 +937,7 @@ const Home = () => {
               <Text
                 className={`font-bold ${esOficina ? 'text-white' : 'text-gray-700'}`}
               >
-                🏢 Oficina
+                Asignar IP
               </Text>
             </Pressable>
 
@@ -951,7 +951,7 @@ const Home = () => {
               <Text
                 className={`font-bold ${!esOficina ? 'text-white' : 'text-gray-700'}`}
               >
-                🏠 Casa
+                Sin asignar IP
               </Text>
             </Pressable>
           </View>
