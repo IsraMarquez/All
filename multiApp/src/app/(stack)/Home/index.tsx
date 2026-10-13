@@ -103,7 +103,7 @@ const Home = () => {
       
     <SafeAreaView style={{ flex: 1 }}>
     <Head>
-        <title>All</title> 
+        <title>All (Funcionando 60%)</title> 
         <meta name="description" content="All" />
       </Head>
       {/* Video */}
@@ -164,7 +164,7 @@ const Home = () => {
               Motivar Cristo (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1]  bg-indigo-950 font-bold text-red-950 text-left">
               Ellos-Espiritu
@@ -184,7 +184,7 @@ const Home = () => {
               EntEscrituras
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-indigo-950 font-bold text-amber-950 text-left">
               Ellos-Info
@@ -204,7 +204,7 @@ const Home = () => {
               Ayudar
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
-              Practicar (Indicadores-Her)
+              Practicar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-indigo-950 font-bold text-gray-950 text-left">
               Ellos-Lugares
@@ -219,9 +219,8 @@ const Home = () => {
               AyudarRutAuto
             </Text>
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
-
             <Text className="flex-[1] bg-indigo-950 font-bold text-gray-950 text-left">
               Ellos-RutAuto
             </Text>
@@ -249,7 +248,7 @@ const Home = () => {
               Motivar Cristo (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
               Ellos-Espiritu
@@ -269,7 +268,7 @@ const Home = () => {
               EntEscrituras (HomeSch/2Tit)
             </Text>
             <Text className="flex-[2] font-bold bg-violet-800 text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] font-bold bg-violet-950 text-amber-950 text-left">
               Ellos-Info
@@ -289,7 +288,7 @@ const Home = () => {
               Noches Hogar (Actividades) MyTiempo Posible (Niños)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Practicar (Indicadores-Her)
+              Practicar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Lugares
@@ -304,9 +303,8 @@ const Home = () => {
               AyudarRutAuto
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
-
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-RutAuto
             </Text>
@@ -334,7 +332,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
               Ellos-3Productos
@@ -354,7 +352,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-amber-950 text-left">
               Ellos-Servicios
@@ -374,7 +372,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -389,7 +387,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
@@ -418,7 +416,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-3Productos
@@ -438,7 +436,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
               Ellos-Servicios
@@ -458,7 +456,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -473,7 +471,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
@@ -503,7 +501,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-3Productos
@@ -523,7 +521,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
               Ellos-Servicios
@@ -543,7 +541,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -558,7 +556,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
@@ -588,7 +586,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
               Ellos-3Productos
@@ -608,7 +606,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
               Ellos-Servicios
@@ -628,7 +626,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -643,7 +641,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
 
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
@@ -673,7 +671,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
               Ellos-3Productos
@@ -693,7 +691,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
               Ellos-Servicios
@@ -713,7 +711,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -728,7 +726,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
@@ -757,7 +755,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
               Ellos-3Productos
@@ -777,7 +775,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] font-bold bg-green-800 text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] font-bold bg-green-950 text-amber-950 text-left">
               Ellos-Servicios
@@ -797,7 +795,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -812,7 +810,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
 
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
@@ -842,7 +840,7 @@ const Home = () => {
               Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              QQ
+              QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
               Ellos-3Productos
@@ -862,7 +860,7 @@ const Home = () => {
               PlanInnovLog
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-amber-800 text-left">
-              My Info
+              My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-amber-950 text-left">
               Ellos-Servicios
@@ -882,7 +880,7 @@ const Home = () => {
               Demo
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar (Indicadores-Her)
+              Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
               Ellos-Reparaciones
@@ -897,7 +895,7 @@ const Home = () => {
               Suministro
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              RutAuto
+              RutAuto (Indicadores-Her)
             </Text>
 
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
