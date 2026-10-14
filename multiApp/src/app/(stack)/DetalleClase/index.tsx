@@ -162,7 +162,7 @@ const DetalleClase = () => {
             style={{ color: item.colorStr, fontSize: 20 }}
             className="text-justify"
           >
-            {item.descripcion.replace(/@/g, '\n')}
+            {item.descripcion ? item.descripcion.replace(/@/g, '\n') : null}
 
             {/* {item.descripcion} */}
           </Text>
