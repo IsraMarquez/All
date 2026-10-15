@@ -130,7 +130,7 @@ const Home = () => {
         </Text>
         <View className="flex-row bg-black p-0.5">
           <Text className="flex-[4] font-bold text-white text-left">
-            Para Mi-Palabras de Vida 60%
+            Para Mi (Me Gusta 60%) - Palabras de Vida 60%
           </Text>
           <Text className="flex-[2] font-bold text-white text-left">FamEH</Text>
           <Text className="flex-[2] font-bold text-white text-left">
@@ -145,6 +145,12 @@ const Home = () => {
 
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-indigo-600 text-white'>RVDJ_EH</Text>
+          <Text className='flex-[2] bg-indigo-800 text-white'></Text>
+          <Text className='flex-[2] bg-indigo-800 text-white'></Text>
+          <Text className='flex-[1] bg-indigo-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-white ">
             <Pressable
@@ -229,6 +235,12 @@ const Home = () => {
 
         {/*❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ FAMEH ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-violet-500 text-white'>FAMEH</Text>
+          <Text className='flex-[2] bg-violet-800 text-white'></Text>
+          <Text className='flex-[2] bg-violet-800 text-white'></Text>
+          <Text className='flex-[1] bg-violet-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-violet-500 ">
             <Pressable
@@ -313,6 +325,12 @@ const Home = () => {
 
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-violet-500 text-white'>RInvAde</Text>
+          <Text className='flex-[2] bg-violet-800 text-white'></Text>
+          <Text className='flex-[2] bg-violet-800 text-white'></Text>
+          <Text className='flex-[1] bg-violet-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-violet-500 ">
             <Pressable
@@ -397,6 +415,12 @@ const Home = () => {
 
         {/*🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 REnstre 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-red-500 text-white'>RInvEsp</Text>
+          <Text className='flex-[2] bg-red-800 text-white'></Text>
+          <Text className='flex-[2] bg-red-800 text-white'></Text>
+          <Text className='flex-[1] bg-red-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-red-500 ">
             <Pressable
@@ -482,6 +506,12 @@ const Home = () => {
 
         {/*🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️ RMund 🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-red-500 text-white'>RInvMund</Text>
+          <Text className='flex-[2] bg-red-800 text-white'></Text>
+          <Text className='flex-[2] bg-red-800 text-white'></Text>
+          <Text className='flex-[1] bg-red-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-red-500  ">
             <Pressable
@@ -567,6 +597,12 @@ const Home = () => {
 
         {/*📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚 Edu 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-yellow-700 text-white'>RInvEdu</Text>
+          <Text className='flex-[2] bg-yellow-800 text-white'></Text>
+          <Text className='flex-[2] bg-yellow-800 text-white'></Text>
+          <Text className='flex-[1] bg-yellow-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-yellow-700  ">
             <Pressable
@@ -652,6 +688,12 @@ const Home = () => {
 
         {/*📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 RTec 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-yellow-700 text-white'>RInvTec</Text>
+          <Text className='flex-[2] bg-yellow-800 text-white'></Text>
+          <Text className='flex-[2] bg-yellow-800 text-white'></Text>
+          <Text className='flex-[1] bg-yellow-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-yellow-700  ">
             <Pressable
@@ -736,6 +778,12 @@ const Home = () => {
 
         {/* 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 RSal 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-green-700 text-white'>RInvSal</Text>
+          <Text className='flex-[2] bg-green-800 text-white'></Text>
+          <Text className='flex-[2] bg-green-800 text-white'></Text>
+          <Text className='flex-[1] bg-green-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-green-700  ">
             <Pressable
@@ -821,6 +869,12 @@ const Home = () => {
 
         {/* 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀 RDep 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
+          <View className="flex-row bg-white ">
+          <Text className='flex-[4] bg-green-700 text-white'>RInvDep</Text>
+          <Text className='flex-[2] bg-green-800 text-white'></Text>
+          <Text className='flex-[2] bg-green-800 text-white'></Text>
+          <Text className='flex-[1] bg-green-950 text-white'></Text>
+          </View>
           {/* Fila 1 */}
           <View className="flex-row bg-green-700  ">
             <Pressable
