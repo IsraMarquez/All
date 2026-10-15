@@ -363,7 +363,7 @@ const Home = () => {
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                💵 Div-PreEntContexVertical-IA-> Plan (Master)
+                💵 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Master)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-amber-800 text-left">
@@ -453,7 +453,7 @@ const Home = () => {
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                🎮 Div-PreEntContexVertical-IA-> Plan (Espe)
+                🎮 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
@@ -544,7 +544,7 @@ const Home = () => {
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                🛩️ Div-PreEntContexVertical-IA-> Plan (Espe)
+                🛩️ Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
@@ -635,7 +635,7 @@ const Home = () => {
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                📚 Div-PreEntContexVertical-IA-> Plan (Ing/Lic)
+                📚 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -726,7 +726,7 @@ const Home = () => {
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                📱 Div-PreEntContexVertical-IA-> Plan (Ing/Lic)
+                📱 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -816,7 +816,7 @@ const Home = () => {
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                🍎 Div-PreEntContexVertical-IA-> Plan (Cur)
+                🍎 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-green-800 text-amber-800 text-left">
@@ -907,7 +907,7 @@ const Home = () => {
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
               <Text className="font-bold text-amber-400 text-left">
-                🏀 Div-PreEntContexVertical-IA-> Plan (Cur)
+                🏀 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-amber-800 text-left">
@@ -959,7 +959,7 @@ const Home = () => {
         </View>
 
         <Text className="font-bold text-white text-left">
-          Vertical - Espiral - Varias veces al día
+           (Vertical-Sincronizada) - Espiral - Varias veces al día
         </Text>
 
         {/* Cambio de red */}
