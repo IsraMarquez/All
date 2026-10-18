@@ -215,7 +215,7 @@ const Home = () => {
               onPress={() => manejarPresion(1, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                😁 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
                         {/* <Pressable
@@ -237,12 +237,37 @@ const Home = () => {
           <View className="flex-row bg-indigo-600 ">
             <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+           >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+           >
+            <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
+              AyudarRutAuto
+            </Text>
+           </Pressable>
+            <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            <Text className="flex-[1] bg-indigo-950 font-bold text-gray-950 text-left">
+              Ellos-RutAuto
+            </Text>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-indigo-600 ">
+            <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNQAAAA==', '_blank')}
-              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNQAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              😁 Sim-PostRutAutoHabitos
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -341,7 +366,7 @@ const Home = () => {
               onPress={() => manejarPresion(2, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                ❤️ Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
@@ -355,14 +380,53 @@ const Home = () => {
             </Text>
           </View>
           {/* Fila 4 */}
+          <View className="flex-row text-lime-400 ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] bg-violet-500 font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
+            <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
+              AyudarRutAuto
+            </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AAAB', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
+            <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            {/* </Pressable> */}
+            {/* <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AAAB', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
+            <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
+              Ellos-RutAuto
+            </Text>
+            {/* </Pressable> */}
+          </View>
+          {/* Fila 5 */}
           <View className="flex-row bg-violet-500 ">
              <Pressable
               className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNgAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] bg-violet-500 font-bold text-green-950 text-left">
-              ❤️ Sim-PostRutAutoHabitos
+            <Text className="flex-[4] bg-violet-500 font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -456,7 +520,7 @@ const Home = () => {
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                💵 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
@@ -473,11 +537,44 @@ const Home = () => {
           <View className="flex-row bg-violet-500 ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
+            <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+            </Pressable>
+            <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAdrQhXAAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              > */}
+            <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+              {/* </Pressable> */}
+          </View>
+          {/* Fila 5*/}
+          <View className="flex-row bg-violet-500 ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAdgxcAQAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              💵 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -565,7 +662,7 @@ const Home = () => {
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🎮 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
@@ -582,11 +679,45 @@ const Home = () => {
           <View className="flex-row bg-red-500">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
+            <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
+            <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            {/* </Pressable> */}
+
+            <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-red-500">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNwAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              🎮 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -675,7 +806,7 @@ const Home = () => {
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🛩️ Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
@@ -692,11 +823,45 @@ const Home = () => {
           <View className="flex-row bg-red-500  ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
+            <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
+            <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            {/* </Pressable> */}
+
+            <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-red-500  ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOAAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              🛩️ Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -785,7 +950,7 @@ const Home = () => {
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                📚 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
@@ -802,11 +967,44 @@ const Home = () => {
           <View className="flex-row bg-yellow-700  ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
+            <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+            </Pressable>
+            <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFLQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
+            <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+              </Pressable>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-yellow-700  ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOQAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              📚 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -894,7 +1092,7 @@ const Home = () => {
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                📱 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
@@ -911,11 +1109,44 @@ const Home = () => {
           <View className="flex-row bg-yellow-700  ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
+            <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+              </Pressable>
+            <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFLgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
+            <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+              </Pressable>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-yellow-700  ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOgAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              📱 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -1003,7 +1234,7 @@ const Home = () => {
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🍎 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
@@ -1020,11 +1251,39 @@ const Home = () => {
           <View className="flex-row bg-green-700  ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
+            <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+              </Pressable>
+            <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+
+            <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-green-700  ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOwAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              🍎 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
@@ -1107,7 +1366,7 @@ const Home = () => {
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🏀 Sim-ProPedPeqRapAde
+                Sim-ProRutRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
@@ -1124,11 +1383,38 @@ const Home = () => {
           <View className="flex-row bg-green-700  ">
              <Pressable
               className="flex-[4] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+            >
+              {/* <br/> */}
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostCalRapAde
+            </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
+            <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
+              Suministro
+            </Text>
+              </Pressable>
+            <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
+              RutAuto (Indicadores-Her)
+            </Text>
+            <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
+              Ellos-Clases
+            </Text>
+          </View>
+          {/* Fila 5 */}
+          <View className="flex-row bg-green-700  ">
+             <Pressable
+              className="flex-[4] "
               onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFPAAAAA==', '_blank')}
             >
               {/* <br/> */}
-            <Text className="flex-[4] font-bold text-green-950 text-left">
-              🏀 Sim-PostRutAutoRobots
+            <Text className="flex-[4] font-bold text-lime-400 text-left">
+              Sim-PostUrgPedPeqRapAde
             </Text>
             </Pressable>
             <Pressable
