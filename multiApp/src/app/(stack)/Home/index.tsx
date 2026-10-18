@@ -3,6 +3,7 @@ import { useEventListener } from 'expo';
 import { useRouter } from 'expo-router';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useRef, useState } from 'react';
+import * as Linking from 'expo-linking'; 
 import Head from 'expo-router/head';
 import {
   Image,
@@ -159,16 +160,21 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Abuelo.png')}
               />
             </Pressable>
+            {/* <Pressable
+              className="flex-[2] bg-indigo-600 "
+              onPress={() => reproducirVideoSeleccionado(VIDEOS.Misional)}
+            > */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left'">
               Motivar Cristo (Tranquilo)
             </Text>
+            {/* </Pressable> */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left">
               QQ (Amistad)
             </Text>
@@ -181,14 +187,20 @@ const Home = () => {
             <Pressable
               className="flex-[4] "
               onPress={() => manejarPresion(1, '/CursosScreen')}
-            >
+              >
+              {/* <br/> */}
               <Text className="font-bold text-amber-600 text-left">
                 😁 Div-PreEntContex-> Plan
               </Text>
             </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => manejarPresion(1, '/CursosScreen')}
+              > */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-amber-800 text-left">
               EntEscrituras
             </Text>
+              {/* </Pressable> */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-amber-800 text-left">
               My Info (Nutridos)
             </Text>
@@ -203,12 +215,17 @@ const Home = () => {
               onPress={() => manejarPresion(1, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                😁 Sim-ProPedazosPRapAde
+                😁 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
+                        {/* <Pressable
+              className="flex-[2] "
+              onPress={() => manejarPresion(1, '/CursosScreen')}
+            > */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
               Ayudar
             </Text>
+            {/* </Pressable> */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
               Practicar (Llamamiento)
             </Text>
@@ -218,18 +235,43 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-indigo-600 ">
+            <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNQAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               😁 Sim-PostRutAutoHabitos
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
               AyudarRutAuto
             </Text>
+            </Pressable>  
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            {/* </Pressable> */}
+            <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNAAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNQAAAA==', '_blank')}
+            >
             <Text className="flex-[1] bg-indigo-950 font-bold text-gray-950 text-left">
               Ellos-RutAuto
             </Text>
+            </Pressable>
           </View>
         </View>
 
@@ -249,16 +291,21 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Matrimonio.jpeg')}
               />
             </Pressable>
+            {/* <Pressable
+              className="flex-[4] bg-violet-500 "
+              onPress={() => reproducirVideoSeleccionado(VIDEOS.FamEh)}
+            > */}
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               Motivar Cristo (Tranquilo)
             </Text>
+            {/* </Pressable> */}
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               QQ (Amistad)
             </Text>
@@ -272,6 +319,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(2, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-600 text-left">
                 ❤️ Div-PreEntContex-> Plan
               </Text>
@@ -293,11 +341,11 @@ const Home = () => {
               onPress={() => manejarPresion(2, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                ❤️ Sim-ProPedazosPRapAde
+                ❤️ Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Noches Hogar (Actividades) MyTiempo Posible (Niños)
+              Noches Hogar (Act) MyTiemPos(Niños)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               Practicar (Llamamiento)
@@ -308,18 +356,42 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-violet-500 ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNgAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] bg-violet-500 font-bold text-green-950 text-left">
               ❤️ Sim-PostRutAutoHabitos
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AAAB', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               AyudarRutAuto
             </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AAAB', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            {/* </Pressable> */}
+            {/* <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AAAB', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-RutAuto
             </Text>
+            {/* </Pressable> */}
           </View>
         </View>
 
@@ -339,8 +411,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/RInvAde.jpg')}
@@ -362,6 +434,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 💵 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Master)
               </Text>
@@ -383,7 +456,7 @@ const Home = () => {
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                💵 Sim-ProPedazosPRapAde
+                💵 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
@@ -398,18 +471,36 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-violet-500 ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAdgxcAQAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               💵 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAdrQhXAAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+            </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAdrQhXAAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
             </Text>
+              {/* </Pressable> */}
           </View>
         </View>
 
@@ -429,8 +520,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Feliz.jpeg')}
@@ -452,6 +543,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 🎮 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
               </Text>
@@ -473,7 +565,7 @@ const Home = () => {
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🎮 Sim-ProPedazosPRapAde
+                🎮 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
@@ -488,15 +580,33 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-red-500">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFNwAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               🎮 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
@@ -520,8 +630,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Viajar.jpeg')}
@@ -543,6 +653,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 🛩️ Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
               </Text>
@@ -564,7 +675,7 @@ const Home = () => {
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🛩️ Sim-ProPedazosPRapAde
+                🛩️ Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
@@ -579,15 +690,33 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-red-500  ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOAAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               🛩️ Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+            </Pressable>
+            {/* <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            > */}
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
@@ -611,8 +740,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Educacion.jpg')}
@@ -634,6 +763,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 📚 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
               </Text>
@@ -655,7 +785,7 @@ const Home = () => {
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                📚 Sim-ProPedazosPRapAde
+                📚 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
@@ -670,19 +800,36 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-yellow-700  ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOQAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               📚 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9AwAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+            >
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+            </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
-
+            <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFLQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
             </Text>
+              </Pressable>
           </View>
         </View>
 
@@ -702,8 +849,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Tec.jpg')}
@@ -725,6 +872,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 📱 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
               </Text>
@@ -746,7 +894,7 @@ const Home = () => {
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                📱 Sim-ProPedazosPRapAde
+                📱 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
@@ -761,18 +909,36 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-yellow-700  ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOgAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               📱 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9BAAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+              </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
+            <Pressable
+              className="flex-[1] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFLgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
             </Text>
+              </Pressable>
           </View>
         </View>
 
@@ -792,8 +958,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Comida.jpeg')}
@@ -815,6 +981,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 🍎 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
               </Text>
@@ -836,7 +1003,7 @@ const Home = () => {
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🍎 Sim-ProPedazosPRapAde
+                🍎 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
@@ -851,12 +1018,24 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-green-700  ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFOwAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               🍎 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9BQAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+              </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
@@ -883,8 +1062,8 @@ const Home = () => {
             >
               <Image
                 style={{
-                  width: 100,
-                  height: 100,
+                  width: 40,
+                  height: 40,
                   borderRadius: 10,
                 }}
                 source={require('@/assets/sprites/Army.jpg')}
@@ -906,6 +1085,7 @@ const Home = () => {
               className="flex-[4] "
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
+              {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
                 🏀 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
               </Text>
@@ -927,7 +1107,7 @@ const Home = () => {
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                🏀 Sim-ProPedazosPRapAde
+                🏀 Sim-ProPedPeqRapAde
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
@@ -942,16 +1122,27 @@ const Home = () => {
           </View>
           {/* Fila 4 */}
           <View className="flex-row bg-green-700  ">
+             <Pressable
+              className="flex-[4] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAATTFPAAAAA==', '_blank')}
+            >
+              {/* <br/> */}
             <Text className="flex-[4] font-bold text-green-950 text-left">
               🏀 Sim-PostRutAutoRobots
             </Text>
+            </Pressable>
+            <Pressable
+              className="flex-[2] "
+              onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU9BgAAAA==', '_blank')}
+              //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
+              >
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
               Suministro
             </Text>
+              </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
               RutAuto (Indicadores-Her)
             </Text>
-
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
               Ellos-Empleo
             </Text>
