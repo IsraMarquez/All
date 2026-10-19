@@ -147,7 +147,7 @@ const Home = () => {
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-indigo-600 text-white'>RVDJ_EH</Text>
+          <Text className='flex-[4] bg-indigo-600 text-white'>RVDJ_EH (Entre semana) 60%</Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[1] bg-indigo-950 text-white'></Text>
