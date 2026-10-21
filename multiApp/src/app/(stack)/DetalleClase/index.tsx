@@ -166,7 +166,7 @@ const DetalleClase = () => {
 
             {/* {item.descripcion} */}
           </Text>
-          <br />
+          <Text>{'\n'}</Text>
 
           {/* ----------------------Visualizar contenido externo-----------------------------------------------------*/}
           {/* Sublista de Cursos pertenecientes a este Tema */}
@@ -176,7 +176,7 @@ const DetalleClase = () => {
                   {asset.ubicacion && asset.ubicacion.trim() !== ''
                     ? rederContent(asset.tipo, asset.ubicacion)
                     : null}
-                  <br />
+                  <Text>{'\n'}</Text>
                 </View>
               ))
             : null}

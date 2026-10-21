@@ -67,15 +67,8 @@ const Home = () => {
     setVideoActual(videoFuente);
     player.replace(videoFuente);
     setEsPantallaCompleta(true);
-    player.play();
-
-    // Retardo mínimo para asegurar que el reproductor inicie antes del Fullscreen
-    setTimeout(() => {
-      if (refVideo.current) {
-        player.play();
-      }
-    }, 200);
   };
+
   // Escuchamos cuando el video cambia de estado
   useEventListener(player, 'statusChange', ({ status }) => {
     // Cuando el video termina de cargarse y está listo, le damos play si el usuario presionó el botón
@@ -1460,7 +1453,7 @@ const Home = () => {
             <Pressable
               onPress={() => checarUbicacion(true)}
               className={`flex-[2] py-3 rounded-lg items-center ${
-                esOficina ? 'bg-indigo-600 shadow' : 'bg-transparent'
+                esOficina ? 'bg-indigo-600' : 'bg-transparent'
               }`}
             >
               <Text
@@ -1474,7 +1467,7 @@ const Home = () => {
             <Pressable
               onPress={() => checarUbicacion(false)}
               className={`flex-[2] py-3 rounded-lg items-center ${
-                !esOficina ? 'bg-emerald-600 shadow' : 'bg-transparent'
+                !esOficina ? 'bg-emerald-600' : 'bg-transparent'
               }`}
             >
               <Text
