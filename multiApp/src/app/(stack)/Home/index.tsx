@@ -124,7 +124,7 @@ const Home = () => {
         </Text>
         <View className="flex-row bg-black p-0.5">
           <Text className="flex-[4] font-bold text-white text-left">
-            Para Mi (Me Gusta 60%) - Palabras de Vida 60%
+            QQ Para Mi (Me Gusta 60%) - Palabras de Vida 60%
           </Text>
           <Text className="flex-[2] font-bold text-white text-left">FamEH</Text>
           <Text className="flex-[2] font-bold text-white text-left">
