@@ -1,12 +1,15 @@
 import { useUbicacion } from '@/context/UbicacionContext';
 import { useLocalSearchParams } from 'expo-router';
+import * as Speech from 'expo-speech';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Button,
   FlatList,
   Image,
   Platform,
+  StyleSheet,
   Text,
   View,
 } from 'react-native';
@@ -35,7 +38,39 @@ const DetalleClase = () => {
   const { ubicacion, cambiarUbicacion } = useUbicacion();
   const [tipo_contenido, setTipo_contenido] = useState('Excel');
   const refVideo = useRef<VideoView>(null);
+  const [estaLeyendo, setEstaLeyendo] = useState(false);
+  const [textoDb, setTextoDb] = useState(
+    'Este es un texto largo que viene de tu base de datos. Al presionar el botón, la aplicación comenzará a leerlo en voz alta de manera nativa.',
+  );
+  //------------------------------------------------------------------------
 
+  const hablar = async (textoNuevo: string) => {
+    await Speech.stop();
+    setTextoDb(textoNuevo);
+    setEstaLeyendo(true);
+    //console.log('textoNuevo> ', textoNuevo);
+    //console.log('textoDb> ', textoDb);
+
+    setTimeout(() => {
+      Speech.speak(textoNuevo, {
+        language: 'es-ES',
+        pitch: 1.0,
+        rate: 1.0,
+        onDone: () => setEstaLeyendo(false),
+        onError: (error) => {
+          //console.error('Error al leer:', error);
+          setEstaLeyendo(false);
+        },
+      });
+    }, 100);
+  }; // ⬅️ ¡AQUÍ FALTABA ESTA LLAVE PARA CERRAR LA FUNCIÓN HABLAR!
+
+  const detener = () => {
+    Speech.stop();
+    setEstaLeyendo(false);
+  };
+
+  //------------------------------------------------------------------------
   const player = useVideoPlayer(videoUrl, (p) => {
     p.loop = true; // Configuración inicial del player
   });
@@ -158,12 +193,27 @@ const DetalleClase = () => {
             {item.nombre}
           </Text>
 
+          {/* ----------------------Speach-----------------------------------------------------*/}
+          <View style={styles.botones}>
+            {item.descripcion ? (
+              !estaLeyendo ? (
+                <Button
+                  title="Leer en voz alta"
+                  color="green"
+                  onPress={() => hablar(item.descripcion.replace(/@/g, '\n'))}
+                />
+              ) : (
+                <Button title="Detener lectura" color="red" onPress={detener} />
+              )
+            ) : null}
+          </View>
+          {/* ----------------------Speach-----------------------------------------------------*/}
+
           <Text
             style={{ color: item.colorStr, fontSize: 20 }}
             className="text-justify"
           >
             {item.descripcion ? item.descripcion.replace(/@/g, '\n') : null}
-
             {/* {item.descripcion} */}
           </Text>
           <Text>{'\n'}</Text>
@@ -188,3 +238,14 @@ const DetalleClase = () => {
 };
 
 export default DetalleClase;
+
+const styles = StyleSheet.create({
+  container: { flex: 1, padding: 20, justifyContent: 'center' },
+  texto: { fontSize: 16, marginBottom: 20 },
+  botones: {
+    marginTop: 10,
+    alignSelf: 'flex-start', // 🌟 Evita que el botón ocupe todo el ancho
+    borderRadius: 20, // 🌟 Hace las esquinas redondeadas
+    overflow: 'hidden',
+  },
+});

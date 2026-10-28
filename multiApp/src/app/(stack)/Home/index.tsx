@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>RInvTiempoAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>RInvAlgoritmo-TiempoAde</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
