@@ -140,7 +140,7 @@ const Home = () => {
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-indigo-600 text-white'>RVDJ_EH (Entre semana) 60%</Text>
+          <Text className='flex-[4] bg-indigo-600 text-white'>1- RVDJ_EH (Entre semana) 60%</Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[1] bg-indigo-950 text-white'></Text>
@@ -165,14 +165,14 @@ const Home = () => {
               onPress={() => reproducirVideoSeleccionado(VIDEOS.Misional)}
             > */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left'">
-              Motivar Cristo (Tranquilo)
+              2- Motivar Cristo (Tranquilo)
             </Text>
             {/* </Pressable> */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left">
               QQ (Amistad)
             </Text>
             <Text className="flex-[1]  bg-indigo-950 font-bold text-red-950 text-left">
-              Ellos-Espiritu
+              3- Ellos-Espiritu
             </Text>
           </View>
           {/* Fila 2 */}
@@ -296,7 +296,7 @@ const Home = () => {
         {/*❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ FAMEH ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>FAMEH</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>4- FAMEH</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -321,14 +321,14 @@ const Home = () => {
               onPress={() => reproducirVideoSeleccionado(VIDEOS.FamEh)}
             > */}
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              Motivar Cristo (Tranquilo)
+              5- Motivar Cristo (Tranquilo)
             </Text>
             {/* </Pressable> */}
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              Ellos-Espiritu
+              6- Ellos-Espiritu
             </Text>
           </View>
           {/* Fila 2 */}
@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>RInvAlgoritmo-TiempoAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvAlgoritmo-TiempoAde</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -476,13 +476,13 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              Motivar Bueno (Tranquilo)
+              14- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              Ellos-3Productos (Dinero6%)
+              21- Ellos- 3Productos (Dinero6%) N4%
             </Text>
           </View>
           {/* Fila 2 */}
@@ -503,7 +503,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios
+              22- Ellos-Servicios
             </Text>
           </View>
           {/* Fila 3 */}
@@ -588,7 +588,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              23- Ellos-Empleo (Temp) N4%
             </Text>
               {/* </Pressable> */}
           </View>
@@ -597,7 +597,7 @@ const Home = () => {
         {/*🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 REnstre 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>RInvEsp</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>8- RInvEsp</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -618,7 +618,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              Motivar Bueno (Tranquilo)
+              15- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               QQ (Amistad)
@@ -741,7 +741,7 @@ const Home = () => {
         {/*🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️ RMund 🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>RInvMund</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>9- RInvMund</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -762,7 +762,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              Motivar Bueno (Tranquilo)
+              16- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               QQ (Amistad)
@@ -885,7 +885,7 @@ const Home = () => {
         {/*📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚 Edu 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>RInvEdu</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>10- RInvEdu</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -906,7 +906,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              Motivar Bueno (Tranquilo)
+              17- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
               QQ (Amistad)
@@ -1027,7 +1027,7 @@ const Home = () => {
         {/*📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 RTec 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>RInvTec</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>11- RInvTec</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -1048,7 +1048,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
-              Motivar Bueno (Tranquilo)
+              18- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
               QQ (Amistad)
@@ -1169,7 +1169,7 @@ const Home = () => {
         {/* 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 RSal 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>RInvSal</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>12- RInvSal</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1190,7 +1190,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              Motivar Bueno (Tranquilo)
+              19- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
               QQ (Amistad)
@@ -1301,7 +1301,7 @@ const Home = () => {
         {/* 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀 RDep 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>RInvDep</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>13- RInvDep</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1322,7 +1322,7 @@ const Home = () => {
               />
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              Motivar Bueno (Tranquilo)
+              20- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
               QQ (Amistad)
