@@ -482,7 +482,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              Ellos-3Productos
+              Ellos-3Productos (Dinero6%)
             </Text>
           </View>
           {/* Fila 2 */}
