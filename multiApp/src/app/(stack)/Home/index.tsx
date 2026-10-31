@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvAlg-ProductosTiempAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvQQ-Algor(Mejora)-ProductosTiempAde</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -588,7 +588,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              23- Ellos-Empleo (Temp) N4%
+              23- Ellos-Empleo(Tmp-Est6) N4%
             </Text>
               {/* </Pressable> */}
           </View>
@@ -733,7 +733,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
           </View>
         </View>
@@ -877,7 +877,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
           </View>
         </View>
@@ -1018,7 +1018,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
               </Pressable>
           </View>
@@ -1160,7 +1160,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
               </Pressable>
           </View>
@@ -1293,7 +1293,7 @@ const Home = () => {
             </Text>
 
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
           </View>
         </View>
@@ -1423,7 +1423,7 @@ const Home = () => {
               RutAuto (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo
+              Ellos-Empleo(Tmp-Est6) N4%
             </Text>
           </View>
         </View>
