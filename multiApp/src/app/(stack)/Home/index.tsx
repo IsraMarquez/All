@@ -503,7 +503,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-amber-950 text-left">
-              22- Ellos-Servicios
+              22- Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -523,7 +523,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -645,7 +645,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -665,7 +665,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -789,7 +789,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -809,7 +809,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -933,7 +933,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -953,7 +953,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1075,7 +1075,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-amber-800 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -1095,7 +1095,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1217,7 +1217,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] font-bold bg-green-950 text-amber-950 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -1237,7 +1237,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1349,7 +1349,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-amber-950 text-left">
-              Ellos-Servicios
+              Ellos-Reparaciones
             </Text>
           </View>
           {/* Fila 3 */}
@@ -1369,7 +1369,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Reparaciones
+              Ellos-Servicios
             </Text>
           </View>
           {/* Fila 4 */}
