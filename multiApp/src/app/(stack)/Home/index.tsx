@@ -140,7 +140,7 @@ const Home = () => {
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-indigo-600 text-white'>1- RVDJ_EH (Entre semana) 60%</Text>
+          <Text className='flex-[4] bg-indigo-600 text-white'>1-> RVDJ_EH (Entre semana) 60%</Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[1] bg-indigo-950 text-white'></Text>
@@ -183,7 +183,7 @@ const Home = () => {
               >
               {/* <br/> */}
               <Text className="font-bold text-amber-600 text-left">
-                😁 Div-PreEntContex-> Plan
+                😁 Div-PreEntContex-Plan(Algoritmo)
               </Text>
             </Pressable>
             {/* <Pressable
@@ -208,7 +208,7 @@ const Home = () => {
               onPress={() => manejarPresion(1, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
                         {/* <Pressable
@@ -296,7 +296,7 @@ const Home = () => {
         {/*❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ FAMEH ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>4- FAMEH</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>4-> FAMEH</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -339,7 +339,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-600 text-left">
-                ❤️ Div-PreEntContex-> Plan
+                ❤️ Div-PreEntContex-Plan(Algoritmo)
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-violet-800 text-amber-800 text-left">
@@ -359,7 +359,7 @@ const Home = () => {
               onPress={() => manejarPresion(2, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvQQ-Mejora(Algoritmo)-Productos VirtualesTiempoAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7-> RInvQQ-Mejora(Algoritmo)-Productos VirtualesTiempoAde</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -493,7 +493,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                💵 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Master)
+                💵 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Master)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-amber-800 text-left">
@@ -513,17 +513,17 @@ const Home = () => {
               onPress={() => manejarPresion(3, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -597,7 +597,7 @@ const Home = () => {
         {/*🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 REnstre 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>8- RInvEsp</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>8-> RInvEsp</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -635,16 +635,16 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🎮 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
+                🎮 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Espe)
               </Text>
             </Pressable>
-            <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
+            <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               PlanInnovLog
             </Text>
-            <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
+            <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               My Info (Nutridos)
             </Text>
-            <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
+            <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-Reparaciones
             </Text>
           </View>
@@ -655,17 +655,17 @@ const Home = () => {
               onPress={() => manejarPresion(4, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -741,7 +741,7 @@ const Home = () => {
         {/*🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️ RMund 🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>9- RInvMund</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>9-> RInvMund</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -779,16 +779,16 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🛩️ Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Espe)
+                🛩️ Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Espe)
               </Text>
             </Pressable>
-            <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
+            <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               PlanInnovLog
             </Text>
-            <Text className="flex-[2] bg-red-800 font-bold text-amber-800 text-left">
+            <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
               My Info (Nutridos)
             </Text>
-            <Text className="flex-[1] bg-red-950 font-bold text-amber-950 text-left">
+            <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-Reparaciones
             </Text>
           </View>
@@ -799,17 +799,17 @@ const Home = () => {
               onPress={() => manejarPresion(5, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -885,7 +885,7 @@ const Home = () => {
         {/*📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚 Edu 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>10- RInvEdu</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>10-> RInvEdu</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -905,13 +905,13 @@ const Home = () => {
                 source={require('@/assets/sprites/Educacion.jpg')}
               />
             </Pressable>
-            <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
+            <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
               17- Motivar Bueno (Tranquilo)
             </Text>
-            <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
+            <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
               QQ (Amistad)
             </Text>
-            <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
+            <Text className="flex-[1] bg-yellow-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
             </Text>
           </View>
@@ -923,7 +923,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                📚 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
+                📚 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -943,17 +943,17 @@ const Home = () => {
               onPress={() => manejarPresion(6, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1027,7 +1027,7 @@ const Home = () => {
         {/*📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 RTec 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>11- RInvTec</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>11-> RInvTec</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -1047,13 +1047,13 @@ const Home = () => {
                 source={require('@/assets/sprites/Tec.jpg')}
               />
             </Pressable>
-            <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
+            <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
               18- Motivar Bueno (Tranquilo)
             </Text>
-            <Text className="flex-[2] bg-yellow-800 font-bold text-red-800 text-left">
+            <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
               QQ (Amistad)
             </Text>
-            <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
+            <Text className="flex-[1] bg-yellow-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
             </Text>
           </View>
@@ -1065,7 +1065,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                📱 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Ing/Lic)
+                📱 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -1085,17 +1085,17 @@ const Home = () => {
               onPress={() => manejarPresion(7, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1169,7 +1169,7 @@ const Home = () => {
         {/* 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 RSal 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>12- RInvSal</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>12-> RInvSal</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1207,7 +1207,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🍎 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
+                🍎 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-green-800 text-amber-800 text-left">
@@ -1227,17 +1227,17 @@ const Home = () => {
               onPress={() => manejarPresion(8, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1301,7 +1301,7 @@ const Home = () => {
         {/* 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀 RDep 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>13- RInvDep</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>13-> RInvDep</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1339,7 +1339,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🏀 Div-PreEntContex (Vertical-Sincronizada)-IA-> Plan (Cur)
+                🏀 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-amber-800 text-left">
@@ -1359,17 +1359,17 @@ const Home = () => {
               onPress={() => manejarPresion(9, '/CursosScreen')}
             >
               <Text className="font-bold text-lime-400 text-left">
-                Sim-ProRutRapAde
+                Sim-ProRutRapAde (Alpha)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Demo
+              Demo (Beta Cerrada)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-gray-800 text-left">
-              Probar (Llamamiento)
+              Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos
+              Ellos-Productos Físicos (LTS)
             </Text>
           </View>
           {/* Fila 4 */}
