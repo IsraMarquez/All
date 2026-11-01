@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvQQ-Mejora(Algoritmo)-ProductosTiempoAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7- RInvQQ-Mejora(Algoritmo)-Productos VirtualesTiempoAde</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -482,7 +482,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              21- Ellos- 3Productos (Dinero6%) N4%
+              21- Ellos- 3Productos Virtuales (Dinero6%) N4%
             </Text>
           </View>
           {/* Fila 2 */}
@@ -523,7 +523,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -555,7 +555,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
               {/* </Pressable> */}
           </View>
@@ -624,7 +624,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -665,7 +665,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -699,7 +699,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
           </View>
           {/* Fila 5 */}
@@ -768,7 +768,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -809,7 +809,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -843,7 +843,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
           </View>
           {/* Fila 5 */}
@@ -912,7 +912,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -953,7 +953,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -985,7 +985,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
               </Pressable>
           </View>
@@ -1054,7 +1054,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-950 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -1095,7 +1095,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1127,7 +1127,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
               </Pressable>
           </View>
@@ -1196,7 +1196,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -1237,7 +1237,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1265,7 +1265,7 @@ const Home = () => {
             </Text>
 
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
           </View>
           {/* Fila 5 */}
@@ -1328,7 +1328,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
-              Ellos-3Productos
+              Ellos-3Productos Virtuales
             </Text>
           </View>
           {/* Fila 2 */}
@@ -1369,7 +1369,7 @@ const Home = () => {
               Probar (Llamamiento)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios
+              Ellos-Productos Físicos
             </Text>
           </View>
           {/* Fila 4 */}
@@ -1396,7 +1396,7 @@ const Home = () => {
               RutAuto (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Clases
+              Ellos-Servicios (Clases)
             </Text>
           </View>
           {/* Fila 5 */}
