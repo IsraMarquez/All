@@ -124,7 +124,7 @@ const Home = () => {
         </Text>
         <View className="flex-row bg-black p-0.5">
           <Text className="flex-[4] font-bold text-white text-left">
-            QQ Para Mi (Me Gusta 60%) - Palabras de Vida 60%
+            QQB Para Mi (Me Gusta 60%) - Palabras de Vida 60%
           </Text>
           <Text className="flex-[2] font-bold text-white text-left">FamEH</Text>
           <Text className="flex-[2] font-bold text-white text-left">
@@ -140,7 +140,7 @@ const Home = () => {
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-indigo-600 text-white'>1-> RVDJ_EH (Entre semana) QQ60%</Text>
+          <Text className='flex-[4] bg-indigo-600 text-white'>1-> RVDJ_EH (Entre semana) QQB60%</Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[1] bg-indigo-950 text-white'></Text>
@@ -169,7 +169,7 @@ const Home = () => {
             </Text>
             {/* </Pressable> */}
             <Text className="flex-[2] bg-indigo-800 font-bold text-red-800 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1]  bg-indigo-950 font-bold text-red-950 text-left">
               3- Ellos-Espiritu
@@ -296,7 +296,7 @@ const Home = () => {
         {/*❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ FAMEH ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>4-> FAMEH QQ6%</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>4-> FAMEH QQB6%</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -325,7 +325,7 @@ const Home = () => {
             </Text>
             {/* </Pressable> */}
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
               6- Ellos-Espiritu
@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>7-> RInvAuto (QQ6%-Mejora(Algoritmo)-Productos VirtualesTiempoAde)</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7-> RInvAuto (QQB6%-Mejora(Algoritmo)-Productos VirtualesTiempoAde)</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -479,7 +479,7 @@ const Home = () => {
               14- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-violet-800 font-bold text-red-800 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
               21- Ellos- 3Productos Virtuales (DineroSeguro6%) Entret N4%
@@ -597,7 +597,7 @@ const Home = () => {
         {/*🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 REnstre 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>8-> RInvEsp QQ6%</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>8-> RInvEsp QQB6%</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -621,7 +621,7 @@ const Home = () => {
               15- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
@@ -741,7 +741,7 @@ const Home = () => {
         {/*🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️ RMund 🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>9-> RInvMund QQ6%</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>9-> RInvMund QQB6%</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -765,7 +765,7 @@ const Home = () => {
               16- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-red-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
@@ -885,7 +885,7 @@ const Home = () => {
         {/*📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚 Edu 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>10-> RInvEdu QQ6%</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>10-> RInvEdu QQB6%</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -909,7 +909,7 @@ const Home = () => {
               17- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
@@ -1027,7 +1027,7 @@ const Home = () => {
         {/*📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 RTec 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>11-> RInvTec QQ6%</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>11-> RInvTec QQB6%</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -1051,7 +1051,7 @@ const Home = () => {
               18- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-yellow-800 font-bold text-red-950 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-yellow-950 font-bold text-red-800 text-left">
               Ellos-3Productos Virtuales
@@ -1169,7 +1169,7 @@ const Home = () => {
         {/* 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 RSal 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>12-> RInvSal QQ6%</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>12-> RInvSal QQB6%</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1193,7 +1193,7 @@ const Home = () => {
               19- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
               Ellos-3Productos Virtuales
@@ -1301,7 +1301,7 @@ const Home = () => {
         {/* 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀 RDep 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>13-> RInvDep QQ6%</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>13-> RInvDep QQB6%</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1325,7 +1325,7 @@ const Home = () => {
               20- Motivar Bueno (Tranquilo)
             </Text>
             <Text className="flex-[2] bg-green-800 font-bold text-red-800 text-left">
-              QQ (Amistad)
+              QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-red-950 text-left">
               Ellos-3Productos Virtuales
