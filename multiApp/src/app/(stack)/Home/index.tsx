@@ -140,7 +140,7 @@ const Home = () => {
         {/*😁😁😁😁😁😁😁😁😁😁😁😁😁😁 ARVDJ 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-indigo-600 text-white'>1-> RVDJ_EH (Entre semana) 60%</Text>
+          <Text className='flex-[4] bg-indigo-600 text-white'>1-> RVDJ_EH (Entre semana) QQ60%</Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[2] bg-indigo-800 text-white'></Text>
           <Text className='flex-[1] bg-indigo-950 text-white'></Text>
@@ -296,7 +296,7 @@ const Home = () => {
         {/*❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ FAMEH ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>4-> FAMEH</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>4-> FAMEH QQ6%</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -455,7 +455,7 @@ const Home = () => {
         {/*💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵 RInvAde 💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵💵*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-violet-500 text-white'>7-> RInvQQ-Mejora(Algoritmo)-Productos VirtualesTiempoAde</Text>
+          <Text className='flex-[4] bg-violet-500 text-white'>7-> RInvAuto (QQ6%-Mejora(Algoritmo)-Productos VirtualesTiempoAde)</Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[2] bg-violet-800 text-white'></Text>
           <Text className='flex-[1] bg-violet-950 text-white'></Text>
@@ -482,7 +482,7 @@ const Home = () => {
               QQ (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              21- Ellos- 3Productos Virtuales (Dinero6%) N4%
+              21- Ellos- 3Productos Virtuales (DineroSeguro6%) Entret N4%
             </Text>
           </View>
           {/* Fila 2 */}
@@ -493,7 +493,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                💵 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Master)
+                💵 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Master)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-violet-800 font-bold text-amber-800 text-left">
@@ -503,7 +503,7 @@ const Home = () => {
               My Info (Nutridos)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-amber-950 text-left">
-              22- Ellos-Reparaciones
+              22- Ellos-Reparaciones (Internet)
             </Text>
           </View>
           {/* Fila 3 */}
@@ -523,7 +523,7 @@ const Home = () => {
               Probar (Llamamiento) (Beta Abierta)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Productos Físicos (LTS)
+              Ellos-Productos Físicos (LTS) (Comida)
             </Text>
           </View>
           {/* Fila 4 */}
@@ -555,7 +555,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              Ellos-Servicios (Clases)
+              Ellos-Servicios (Clases-Casa)
             </Text>
               {/* </Pressable> */}
           </View>
@@ -588,7 +588,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              23- Ellos-Empleo(Tmp-Est6) N4%
+              23- Ellos-Empleo(Tmp-Est6) Ni modo (Autos)N4%
             </Text>
               {/* </Pressable> */}
           </View>
@@ -597,7 +597,7 @@ const Home = () => {
         {/*🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 REnstre 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>8-> RInvEsp</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>8-> RInvEsp QQ6%</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -635,7 +635,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🎮 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Espe)
+                🎮 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
@@ -733,7 +733,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
           </View>
         </View>
@@ -741,7 +741,7 @@ const Home = () => {
         {/*🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️ RMund 🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️🛩️*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-red-500 text-white'>9-> RInvMund</Text>
+          <Text className='flex-[4] bg-red-500 text-white'>9-> RInvMund QQ6%</Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[2] bg-red-800 text-white'></Text>
           <Text className='flex-[1] bg-red-950 text-white'></Text>
@@ -779,7 +779,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🛩️ Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Espe)
+                🛩️ Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Espe)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-red-800 font-bold text-red-950 text-left">
@@ -877,7 +877,7 @@ const Home = () => {
             {/* </Pressable> */}
 
             <Text className="flex-[1] bg-red-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
           </View>
         </View>
@@ -885,7 +885,7 @@ const Home = () => {
         {/*📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚 Edu 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>10-> RInvEdu</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>10-> RInvEdu QQ6%</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -923,7 +923,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                📚 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Ing/Lic)
+                📚 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -1018,7 +1018,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
               </Pressable>
           </View>
@@ -1027,7 +1027,7 @@ const Home = () => {
         {/*📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 RTec 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-yellow-700 text-white'>11-> RInvTec</Text>
+          <Text className='flex-[4] bg-yellow-700 text-white'>11-> RInvTec QQ6%</Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[2] bg-yellow-800 text-white'></Text>
           <Text className='flex-[1] bg-yellow-950 text-white'></Text>
@@ -1065,7 +1065,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                📱 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Ing/Lic)
+                📱 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Ing/Lic)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-yellow-800 font-bold text-amber-950 text-left">
@@ -1160,7 +1160,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               >
             <Text className="flex-[1] bg-yellow-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
               </Pressable>
           </View>
@@ -1169,7 +1169,7 @@ const Home = () => {
         {/* 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 RSal 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>12-> RInvSal</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>12-> RInvSal QQ6%</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1207,7 +1207,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🍎 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Cur)
+                🍎 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] font-bold bg-green-800 text-amber-800 text-left">
@@ -1293,7 +1293,7 @@ const Home = () => {
             </Text>
 
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
           </View>
         </View>
@@ -1301,7 +1301,7 @@ const Home = () => {
         {/* 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀 RDep 🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀🏀*/}
         <View className="border border-gray-300 rounded-lg overflow-hidden m-1">
           <View className="flex-row bg-white ">
-          <Text className='flex-[4] bg-green-700 text-white'>13-> RInvDep</Text>
+          <Text className='flex-[4] bg-green-700 text-white'>13-> RInvDep QQ6%</Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[2] bg-green-800 text-white'></Text>
           <Text className='flex-[1] bg-green-950 text-white'></Text>
@@ -1339,7 +1339,7 @@ const Home = () => {
             >
               {/* <br/> */}
               <Text className="font-bold text-amber-400 text-left">
-                🏀 Div-PreEntContex (Vertical-Sincronizada)-IA-Plan(Algoritmo) (Cur)
+                🏀 Div-Pre(Vertical-Sincro)-IAEntenderContex-Plan(Algoritmo) (Cur)
               </Text>
             </Pressable>
             <Text className="flex-[2] bg-green-800 font-bold text-amber-800 text-left">
@@ -1423,7 +1423,7 @@ const Home = () => {
               RutAuto (Indicadores-Her)
             </Text>
             <Text className="flex-[1] bg-green-950 font-bold text-gray-950 text-left">
-              Ellos-Empleo(Tmp-Est6) N4%
+              Ellos-Empleo(Tmp-Est6) Ni modo N4%
             </Text>
           </View>
         </View>
