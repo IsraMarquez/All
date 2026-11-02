@@ -482,7 +482,7 @@ const Home = () => {
               QQB (Amistad)
             </Text>
             <Text className="flex-[1] bg-violet-950 font-bold text-red-950 text-left">
-              21- Ellos- 3Productos Virtuales (DineroSeguro6%) Entret N4%
+              21- Ellos- 3ProductosVirtual (DineroSeguroConfia6%)EntreN4%
             </Text>
           </View>
           {/* Fila 2 */}
@@ -588,7 +588,7 @@ const Home = () => {
               //onPress={() => window.open('https://to-do.live.com/tasks/AQMkADAwATMwMAExLWE4YjgtZDg1Yi0wMAItMDAKAC4AAANrK7mAUvpsSp4qAZ6pEuQIAQBboaU5uEAURrf9YGFvrLU4AAAAQpU8-wAAAA==', '_blank')}
               > */}
             <Text className="flex-[1] bg-violet-950 font-bold text-gray-950 text-left">
-              23- Ellos-Empleo(Tmp-Est6) Ni modo (Autos)N4%
+              23- Ellos-Empl (NoSegNoConTmp-Est6) NiMod(Auts)N4%
             </Text>
               {/* </Pressable> */}
           </View>
