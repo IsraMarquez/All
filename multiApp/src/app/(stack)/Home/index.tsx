@@ -120,7 +120,7 @@ const Home = () => {
       {/* Encabezado */}
       <View className="border border-white rounded-lg overflow-hidden m-1">
         <Text className="font-bold text-white text-left">
-          Horizontal - Mayor Tiempo Posible (Niños) 60%
+          Vertical - Mayor Tiempo Posible (Niños) 60%
         </Text>
         <View className="flex-row bg-black p-0.5">
           <Text className="flex-[4] font-bold text-white text-left">
@@ -1429,7 +1429,7 @@ const Home = () => {
         </View>
 
         <Text className="font-bold text-white text-left">
-           (Vertical-Sincronizada) - Espiral - Varias veces al día
+           (Horizontal-Sincronizada) - Espiral - Varias veces al día
         </Text>
 
         {/* Cambio de red */}
